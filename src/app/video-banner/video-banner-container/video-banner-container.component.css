@@ -1,0 +1,39 @@
+.row {
+  background: #E35045;
+}
+
+h1 {
+  color: white;
+  font-family: avenir !important;
+}
+
+p {
+  color: white;
+  font-family: avenir !important;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.sprite {
+  background: url('../.../../../../assets/sprite.png') no-repeat top left;
+  height: 12px;
+}
+
+.sprite.shape2 {
+  background-position: 0 -116px;
+  width: 49px;
+  height: 51px;
+  position: absolute;
+  right: 10%;
+}
+
+.sprite.shape3 {
+  background-position: 0 -177px;
+  width: 84px;
+  height: 86px;
+  position: absolute;
+  top: 156%;
+}

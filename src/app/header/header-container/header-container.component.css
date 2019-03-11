@@ -1,0 +1,87 @@
+.cover-container {
+  background: url('../../../assets/header-background.png');
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+p {
+  color: white;
+
+
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.Premiere {
+  font-family: Avenir;
+  font-size: 21px;
+}
+
+.bringing {
+  font-family: Avenir;
+  font-size: 13px;
+}
+
+.buy-btn {
+  background: #E4AD27;
+  border-radius: 0;
+  color: white;
+  font-size: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.nav-link {
+  color: white !important
+}
+
+.col-11 {
+  background: #E35045;
+  height: 30px;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+.navbar-toggler {
+  color: white
+}
+
+.logo {
+  height: 99px;
+  width: 140px;
+
+}
+
+
+.sprite {
+  background: url('../../../assets/sprite.png') no-repeat top left;
+  height: 12px;
+}
+
+.sprite.shape1 {
+  background-position: 0 0;
+  width: 87px;
+  height: 106px;
+  position: absolute;
+  right: 46%;
+}
+
+@media screen and (max-width: 630px) {
+
+  .sprite.shape1 {
+    background-position: 0 0;
+    width: 87px;
+    height: 106px;
+    position: absolute;
+    right: 35%;
+  }
+}

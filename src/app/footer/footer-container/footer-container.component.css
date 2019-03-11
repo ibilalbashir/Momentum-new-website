@@ -1,0 +1,78 @@
+.container-fluid {
+  background: #051327;
+  color: white;
+  position: relative;
+  padding-bottom: 0px !important;
+}
+
+.container {
+  /* padding: 50px; */
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0px !important;
+}
+
+.logo-img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+
+
+.address-col {
+  padding-top: 46px;
+}
+
+.contact-col {
+  padding-top: 68px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.copyright-row {
+  background: #E4AD27;
+  padding-top: 1%;
+}
+
+
+
+.footer-links {
+  float: left
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.right-bar {
+  right: 0;
+  position: absolute;
+  color: white;
+  top: 0;
+  background: #E4AD27;
+  bottom: 0;
+}
+
+.right-bar-ul {
+  padding-top: 70px;
+
+}
+
+.right-bar-li {
+  padding-top: 10px;
+  margin-left: 18px;
+  margin-right: 18px;
+}

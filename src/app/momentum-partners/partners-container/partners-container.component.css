@@ -1,0 +1,134 @@
+.google {
+  background: url('../../../assets/googleLogo..png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.teamup {
+  background: url('../../../assets/teamupLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.aws {
+  background: url('../../../assets/awsLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.facebook {
+  background: url('../../../assets/facebookLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.dot {
+  background: url('../../../assets/dotLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.draper {
+  background: url('../../../assets/draperLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.social {
+  background: url('../../../assets/socialLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.abacus {
+  background: url('../../../assets/abacusLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.idg {
+  background: url('../../../assets/IDGLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.techHub {
+  background: url('../../../assets/techHubLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.microsoft {
+  background: url('../../../assets/microsoftLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.plan9 {
+  background: url('../../../assets/plan9Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+.founder {
+  background: url('../../../assets/founderLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-position: center;
+}
+
+mat-card {
+  width: 150px;
+  height: 40px;
+  margin: 10px
+}
+
+.row {
+  padding-top: 30px
+}
+
+.container {
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+  mat-card {
+    width: 80px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  mat-card {
+    width: 80px;
+  }
+}

@@ -1,0 +1,92 @@
+mat-card {
+  height: 270px;
+  margin: 15px;
+  border-radius: 0;
+  font-family: Avenir !important;
+}
+
+.first-card {
+  background: #E35045;
+}
+
+.first-card h1 {
+  color: white;
+}
+
+.container-fluid {
+  background: #E35045;
+  position: relative;
+}
+
+img {
+  height: 50px;
+  margin: 15px;
+}
+
+.container-fluid {
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+
+.sprite {
+  background: url('../../../assets/sprite.png') no-repeat top left;
+  height: 12px;
+}
+
+.sprite.shape4 {
+  background-position: 0 -273px;
+  width: 20px;
+  height: 138px;
+  position: absolute;
+  top: 30%
+}
+
+.sprite.shape5 {
+  background-position: 0 -421px;
+  width: 129px;
+  position: absolute;
+  left: 28px;
+
+  bottom: 11px;
+}
+
+
+
+#ngb-slide-0 {
+  background-color: black !important;
+}
+
+#ngb-slide-1 {
+  background-color: black !important;
+}
+
+#ngb-slide-2 {
+  background-color: black !important;
+}
+
+#ngb-slide-3 {
+  background-color: black !important;
+}
+
+#ngb-slide-4 {
+  background-color: black !important;
+}
+
+#ngb-slide-5 {
+  background-color: black !important;
+}
+
+#ngb-slide-6 {
+  background-color: black !important;
+}
+
+
+@media only screen and (min-width : 767px) and (max-width : 1192px) {
+  mat-card-content {
+    font-size: 11px !important;
+  }
+
+  img {
+    height: 50px !important;
+  }
+}
