@@ -1,0 +1,73 @@
+.fyp-pitching-content {
+  .card-title {
+    padding-top: 15px;
+    font-family: Avenir !important
+  }
+
+  .header {
+    background: #E35045;
+    color: white;
+  }
+
+  .card-content {
+    background: #F5F5F5;
+
+  }
+
+  .top-content {
+    padding: 28px;
+    font-family: Avenir !important
+  }
+
+  .organizedBy {
+    background: white;
+    font-family: Avenir !important
+  }
+
+  .price {
+    background: #E4AD27;
+    width: 200px;
+    height: 50px;
+    color: white;
+    padding-top: 10px;
+    font-family: Avenir !important
+  }
+
+  .organizedByP {
+    margin-top: 8px;
+    padding-left: 14px;
+  }
+
+  .logo {
+    padding-top: 16px;
+    padding-left: 63px;
+  }
+
+  .skills {
+    background: #F5F5F5;
+    padding: 15px 25px;
+    margin-top: 25px;
+
+    h2 {
+      font-weight: bolder;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+        /* margin: 0 7px; */
+        background: #CECECE;
+        color: white;
+        display: inline-block;
+        padding: 3px 8px;
+        margin-right: 7px;
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,99 @@
+#content-id {
+  .sub-header {
+    background: url('./../../../assets/agenda-header.png');
+
+    width: -webkit-fill-available;
+
+    background-repeat: no-repeat;
+  }
+
+  .main-heading {
+    color: white;
+    padding-top: 100px;
+    font-weight: 600;
+  }
+
+  .location {
+    color: white;
+    margin-top: -26px;
+  }
+
+  .content {
+    margin-bottom: 80px;
+  }
+
+  .mat-tab-label {
+    background: #E35045;
+  }
+
+  .tabs {
+    justify-content: flex-end;
+  }
+
+  .mat-tab-label .mat-ripple {
+    background: blue;
+  }
+
+  /deep/ .mat-ink-bar {
+    background-color: inherit !important;
+  }
+
+  .mat-tab-label.mat-tab-ripple {
+    background-color: red !important;
+  }
+
+  .cdk-focused {
+    background: red !important;
+
+  }
+
+  /deep/ .mat-tab-label-active {
+    background: #E35045;
+  }
+
+  /deep/ .mat-tab-label-active.mat-tab-label {
+    opacity: 1 !important;
+    color: white;
+  }
+
+  .border {
+    // padding: 15px 173px;
+    margin-top: 25px;
+  }
+
+  .card-heading {
+    font-weight: 900;
+    font-family: Avenir;
+    margin-top: 20px;
+  }
+
+  .grey-font {
+    color: #A8A8A8;
+    font-family: Avenir !important;
+    font-size: 14px;
+  }
+
+  .clip {
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    background: #E35045;
+    -webkit-clip-path: polygon(82% 0, 100% 50%, 83% 100%, 0% 100%, 0 55%, 0% 0%);
+    clip-path: polygon(82% 0, 100% 50%, 83% 100%, 0% 100%, 0 55%, 0% 0%);
+  }
+
+  .time-stamp {
+    position: absolute;
+    left: 30px;
+    top: 8px;
+    color: white;
+  }
+
+  .keynote {
+    height: 16px;
+    margin-right: 6px;
+  }
+
+}
