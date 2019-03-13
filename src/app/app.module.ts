@@ -11,10 +11,11 @@ import { VideoBannerModule } from './video-banner/video-banner.module';
 import { MomentumPartnersModule } from './momentum-partners/momentum-partners.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HeaderModule, FooterModule, AppRoutingModule],
+  imports: [BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

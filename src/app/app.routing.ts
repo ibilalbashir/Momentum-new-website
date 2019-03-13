@@ -17,6 +17,15 @@ const AppRoutes: Routes = [
   {
     path: 'hackathon',
     loadChildren: './hackathon/hackathon.module#HackathonModule'
+  },
+  {
+    path: 'main-conference',
+    loadChildren:
+      './main-conference/main-conference.module#MainConferenceModule'
+  },
+  {
+    path: 'fyp-pitching',
+    loadChildren: './fyp-pitching/fyp-pitching.module#FypPitchingModule'
   }
 ];
 
