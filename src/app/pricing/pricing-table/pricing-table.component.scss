@@ -1,0 +1,38 @@
+.pricing-table-wrapper {
+    color: white;
+    ul {
+        padding: 0px 0 10px 0;
+        li {
+            list-style: none;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    .heading {
+        background: #E4AD27;
+        font-size: 20px;
+        padding: 13px 0px;
+    }
+    .body {
+        background: #E35045;
+        .price {
+            font-size: 30px;
+            padding: 30px 0;
+            display: block;
+        }
+    }
+    .buy-button {
+        width: calc(100% - 17%);
+        left: 8%;
+        bottom: -80px;
+        button {
+            width: 100%;
+            background: #E4AD27;
+            padding: 15px 0;
+            border-radius: unset;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}

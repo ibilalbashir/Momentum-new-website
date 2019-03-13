@@ -1,0 +1,106 @@
+#hackathon-wrapper {
+    .body {
+        margin-bottom: 150px;
+        margin-top: 70px;
+    }
+    p {
+        color: #8e8e8e;
+    }
+    .bg {
+        background: url('../../../assets/event-detail-light.jpg');
+        height: 250px;
+        background-size: cover;
+        #title {
+            padding-top: 90px;
+            h1 {
+                color: white;
+                font-weight: bolder;
+            }
+        }
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+    }
+    .circ-check {
+        li {
+            color: #8e8e8e;
+        }
+        li:before {
+            content: "\2713";
+            background: #E4AD27;
+            color: #ffeec6;
+            border-radius: 50%;
+            padding: 3px 7px;
+            font-weight: bold;
+            font-size: 11px;
+            margin-right: 10px;
+        }
+    }
+    .list-heading {
+        font-size: 32px;
+        font-weight: bolder;
+        display: block;
+        margin-top: 60px;
+        margin-bottom: 15px;
+    }
+    .section {
+        background: #E15149;
+        color: white;
+        margin-bottom: 36px;
+        .title {
+            padding: 17px 30px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .sec-title {
+            font-size: 24px;
+            padding-bottom: 0;
+        }
+        .bg-mustard {
+            background: #E4AD27;
+        }
+        .body {
+            padding: 0px 30px;
+            margin: 0;
+            padding-top: 20px;
+            padding-bottom: 1px;
+            .norm {
+                li:before {
+                    content: "\2713";
+                    color: white;
+                    margin-right: 7px;
+                }
+            }
+            .timers {
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    margin-right: 22px;
+                    .timer {
+                        padding: 8px 16px;
+                        background: #C13F39;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                    .timer-head {
+                        font-size: 13px;
+                        display: block;
+                        margin-top: 7px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .a {
+                margin-bottom: 15px;
+                font-size: 17px;
+            }
+            img {
+                max-width: 77px;
+            }
+        }
+    }
+}
