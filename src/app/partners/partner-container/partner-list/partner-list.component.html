@@ -1,0 +1,8 @@
+<div class="partner">
+    <span class="d-block">{{categoryName}}</span>
+    <ul>
+        <li *ngFor="let item of partnersArray">
+            <div (click)="showPartner(item)" [style.background]="'url('+ item.image+')'"></div>
+        </li>
+    </ul>
+</div>

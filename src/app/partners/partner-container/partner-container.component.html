@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="partners">
+        <ul class="text-center">
+            <li *ngFor="let item of partnersArr">
+                <app-partner-list [categoryName]="item.category" [partnersArray]="item.partners"></app-partner-list>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -17,6 +17,10 @@ const AppRoutes: Routes = [
   {
     path: 'hackathon',
     loadChildren: './hackathon/hackathon.module#HackathonModule'
+  },
+  {
+    path: 'partners',
+    loadChildren: './partners/partners.module#PartnersModule'
   }
 ];
 
