@@ -1,0 +1,10 @@
+<div class="partner-popup text-center">
+    <div class="bg" [style.background]="'url('+ data.image+')'">
+
+    </div>
+    <h2>{{data.name}}</h2>
+    <p>{{data.description}}</p>
+    <ul>
+        <li *ngFor="let item of data.tags">{{item}}</li>
+    </ul>
+</div>

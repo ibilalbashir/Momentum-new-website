@@ -1,36 +1,36 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const AppRoutes: Routes = [
   {
-    path: "",
-    loadChildren: "./home/home.module#HomeModule"
+    path: '',
+    loadChildren: './home/home.module#HomeModule'
   },
   {
-    path: "buy-ticket",
-    loadChildren: "./pricing/pricing.module#PricingModule"
+    path: 'buy-ticket',
+    loadChildren: './pricing/pricing.module#PricingModule'
   },
   {
-    path: "speakers",
-    loadChildren: "./profile/profile.module#ProfileModule"
+    path: 'speakers',
+    loadChildren: './profile/profile.module#ProfileModule'
   },
   {
-    path: "hackathon",
-    loadChildren: "./hackathon/hackathon.module#HackathonModule"
+    path: 'hackathon',
+    loadChildren: './hackathon/hackathon.module#HackathonModule'
   },
   {
-    path: "main-conference",
+    path: 'main-conference',
     loadChildren:
-      "./main-conference/main-conference.module#MainConferenceModule"
+      './main-conference/main-conference.module#MainConferenceModule'
   },
   {
-    path: "fyp-pitching",
-    loadChildren: "./fyp-pitching/fyp-pitching.module#FypPitchingModule"
+    path: 'fyp-pitching',
+    loadChildren: './fyp-pitching/fyp-pitching.module#FypPitchingModule'
   },
   {
-    path: "conference-details",
+    path: 'conference-details',
     loadChildren:
-      "./conference-detail/conference-detail.module#ConferenceDetailModule"
+      './conference-detail/conference-detail.module#ConferenceDetailModule'
   }
 ];
 
