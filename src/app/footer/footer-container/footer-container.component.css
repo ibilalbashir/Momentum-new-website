@@ -26,6 +26,15 @@ ul {
   padding-top: 46px;
 }
 
+.yellow-bar {
+  height: 50px;
+  width: 53px;
+  background: #E4AD27;
+  position: absolute;
+  top: -50px;
+  left: -1px;
+}
+
 .contact-col {
   padding-top: 68px;
 }
@@ -38,6 +47,24 @@ p {
   background: #E4AD27;
   padding-top: 1%;
 }
+
+.sprite {
+  background: url('../../../assets/sprite.png') no-repeat top left;
+  width: 125px;
+  height: 12px;
+}
+
+.sprite.shape11 {
+  background-position: 0 -925px;
+  width: 81px;
+  height: 83px;
+  top: -58px;
+
+  left: 53px;
+  position: absolute;
+}
+
+
 
 
 
