@@ -27,4 +27,49 @@ p {
 
 
 
-.yellow-bar {}
+
+
+.sprite {
+  background: url('../../../assets/sprite.png') no-repeat top left;
+  width: 125px;
+  height: 12px;
+}
+
+.sprite.shape11 {
+  background-position: 0 -925px;
+  width: 81px;
+  height: 83px;
+  position: absolute;
+  right: -1px;
+  top: 243px;
+}
+
+.sprite.shape7 {
+  background-position: 0 -572px;
+  width: 12px;
+  height: 59px;
+  position: absolute;
+  right: -1px;
+  top: 80%;
+}
+
+.sprite.shape10 {
+  background: #E4AD27;
+  position: absolute;
+  width: 85px;
+  height: 76px;
+  right: -1px;
+  bottom: -58%;
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+  .sprite.sprite.shape10 {
+    display: none !important
+  }
+}
+
+@media (max-width: 767.98px) {
+  .top-divs {
+    margin-top: 7px
+  }
+}

@@ -10,7 +10,7 @@ export class PricingContainerComponent implements OnInit {
     {
       name: 'Regular Pass',
       price: '25,000',
-      features: ['Access', 'No Access', 'Premium', 'Stuff', 'Momentum', 'Swag']
+      features: ['Access', 'No Access', 'Premium', 'Stuff', 'Momentum', '-']
     },
     {
       name: 'All Access Pass',
@@ -22,7 +22,7 @@ export class PricingContainerComponent implements OnInit {
         'Stuff',
         'Momentum',
         'Swag',
-        'Yeah',
+        '-',
         'Speakers',
         'Conferences'
       ]
@@ -36,12 +36,12 @@ export class PricingContainerComponent implements OnInit {
         'Premium',
         'Stuff',
         'Momentum',
-        'Swag',
-        'Ohh',
-        'Yeah',
+        '-',
+        '-',
+        '-',
         'Speakers',
         'Conferences',
-        'Roti',
+        '-',
         'BBQ',
         'Salads'
       ]

@@ -1,17 +1,17 @@
 <div class="pricing-table-wrapper position-relative text-center h-100">
-    <div class="heading">
-        {{name}}
-    </div>
-    <div class="body h-100">
-        <span class="price">PKR {{price}}</span>
-        <ul>
-            <li *ngFor="let item of features">
-                {{item}}
-            </li>
-        </ul>
+  <div class="heading">
+    {{name}}
+  </div>
+  <div class="body h-100">
+    <span class="price">PKR {{price}}</span>
+    <ul>
+      <li *ngFor="let item of features">
+        {{item}}
+      </li>
+    </ul>
 
-    </div>
-    <div class="buy-button position-absolute">
-        <button class="btn">Buy Button</button>
-    </div>
+  </div>
+  <div class="buy-button position-absolute">
+    <button class="btn" style="z-index: 2">Buy Button</button>
+  </div>
 </div>

@@ -96,4 +96,30 @@
     margin-right: 6px;
   }
 
+  .sprite {
+    background: url('../../../assets/sprite.png') no-repeat top left;
+    width: 125px;
+    height: 12px;
+  }
+
+  .sprite.shape11 {
+    background-position: 0 -925px;
+    width: 81px;
+    height: 83px;
+    position: absolute;
+    right: 2px;
+    top: 36%;
+
+  }
+
+  .sprite.shape7 {
+    background-position: 0 -572px;
+    width: 12px;
+    height: 59px;
+    position: absolute;
+    top: 64%;
+    right: 0;
+
+  }
+
 }
