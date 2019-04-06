@@ -1,5 +1,6 @@
 .cover-container {
-  background: url('../../../assets/header-background.png');
+  /* background: url('../../../assets/header-background.png'); */
+  background: #051327;
   background-repeat: no-repeat;
   background-size: cover
 }
@@ -38,10 +39,10 @@ h1 {
   color: white !important
 }
 
-.col-11 {
+/* .col-11 {
   background: #E35045;
   height: 30px;
-}
+} */
 
 .navbar-toggler-icon {
   color: white !important;
@@ -59,6 +60,10 @@ h1 {
   height: 99px;
   width: 140px;
 
+}
+
+.navbar-inner {
+  background:transparent;
 }
 
 
@@ -83,5 +88,10 @@ h1 {
     height: 106px;
     position: absolute;
     right: 35%;
+  }
+  .logo {
+    height: 74px;
+    width: 121px;
+
   }
 }

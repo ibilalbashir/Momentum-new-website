@@ -1,7 +1,9 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class='sprite shape2'></div>
-    <div class="col-12 text-center">
+<div class="container-fluid" style="    padding-bottom: 146px;">
+  <div class="row top-pad">
+    <div class="vertical-text d-none d-md-block">Momentum Tech Conference 2019</div>
+    <div class="sprite shape11"></div>
+    <div class='sprite shape2 d-none d-md-block'></div>
+    <div class="col-12 text-center top-padd">
       <h1><b>What awaits you at<br>
           Momentum?</b></h1>
       <p>Have a look at last year’s highlights</p>
@@ -9,11 +11,16 @@
     <div class='sprite shape3 .hidden-sm-down'></div>
 
     <div class="offset-md-3 col-md-6 col-sm-12 col-xs-12">
-      <video width="400" controls>
-        <source src="../../../assets/videos/video.mp4" type="video/mp4">
 
 
-      </video>
+      <div id="video" class="max-width-1024">
+        <div class="embed-responsive embed-responsive-16by9" id="player">
+        </div>
+      </div>
+      <!-- <iframe id="video" class="col-12" style="height: 400px;"
+        [src]="bypass('https://www.youtube.com/embed/rFDxtcfDOHo')" frameborder="0" allowfullscreen>
+      </iframe> -->
+
     </div>
 
   </div>

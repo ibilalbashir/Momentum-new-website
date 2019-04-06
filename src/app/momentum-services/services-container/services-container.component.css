@@ -1,21 +1,36 @@
 mat-card {
   height: 270px;
-  margin: 15px;
-  border-radius: 0;
+ margin: 15px;
+  border-radius: 0 !important;
   font-family: Avenir !important;
+  cursor: pointer;
+
 }
 
+.service-card:hover{
+  -webkit-box-shadow: 9px 10px 0px 0px rgba(228,173,39,1) !important;
+  -moz-box-shadow: 9px 10px 0px 0px rgba(228,173,39,1) !important;
+  box-shadow: 9px 10px 0px 0px rgba(228,173,39,1) !important;
+}
+
+
 .first-card {
-  background: #E35045;
+  background:transparent;
 }
 
 .first-card h1 {
   color: white;
 }
 
-.container-fluid {
-  background: #E35045;
+.v_background{
+  background:url('../../../assets/image/videoBackground.jpg');
   position: relative;
+  background-size: cover;
+}
+
+.container-fluid {
+
+  padding-bottom: 30px;
 }
 
 img {
@@ -24,8 +39,8 @@ img {
 }
 
 .container-fluid {
-  padding-bottom: 50px;
-  padding-top: 70px;
+  /* padding-bottom: 50px;
+  padding-top: 70px; */
 }
 
 .sprite {
@@ -79,6 +94,7 @@ img {
 #ngb-slide-6 {
   background-color: black !important;
 }
+
 
 
 @media only screen and (min-width : 767px) and (max-width : 1192px) {

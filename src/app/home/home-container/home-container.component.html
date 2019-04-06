@@ -1,26 +1,30 @@
 <div class="text-center cover-container d-flex w-100 h-100  mx-auto flex-column">
-    <main role="main" class="inner cover">
+  <main role="main" class="inner cover">
 
-        <div class='sprite shape1'></div>
-        <br><br><br><br><br><br>
-        <h1 class="cover-heading">PAKISTAN'S</h1>
-        <br>
-        <p class=" Premiere">Premiere Ecosystem conference and exhibition<br>
-        </p>
-        <p class=" bringing">
-            bringing together startups, investors and technologists!
-        </p><br><br><br>
-        <p class="">
-            <button class="btn  buy-btn">BUY TICKETS NOW</button>
-        </p>
-        <br>
-        <br>
-    </main>
+    <div class='sprite shape1 d-none d-md-block'></div>
+    <br><br><br><br><br><br>
+    <h1 class="top-pad">PAKISTAN'S</h1>
+    <br>
+    <p class=" Premiere" style="font-size: 35px;">Premier Ecosystem Conference and Exhibition<br>
+    </p>
+    <p class=" bringing" style="font-size: 19px;">
+      bringing together startups, investors and technologists! <br><br>
+      30th April - 1st May<br>
+      Pearl Continental Hotel, Karachi
+    </p><br><br>
+    <p class="">
+      <button class="btn  buy-btn" style="font-size: 16px;" [routerLink]="['/buy-ticket']"
+        routerLinkActive="router-link-active">BUY TICKETS NOW</button>
+    </p>
+    <br>
+    <br>
+
+  </main>
 
 </div>
-<div class="col-11 " style="margin-top: -30px;">
+<!-- <div class="col-11 " style="margin-top: -30px;">
 
-</div>
+</div> -->
 <app-video-banner-container></app-video-banner-container>
 <app-services-container></app-services-container>
 <app-partners-container></app-partners-container>

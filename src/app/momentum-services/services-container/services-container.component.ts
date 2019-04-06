@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-services-container',
@@ -11,7 +12,14 @@ export class ServicesContainerComponent implements OnInit {
     () => `https://picsum.photos/900/500?random&t=${Math.random()}`
   );
 
-  constructor() {}
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+  hackathonRoute() {
+
+  }
+  buyTicketRoute() {
+    this.router.navigate(['/buy-ticket'])
+  }
+
 }

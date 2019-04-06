@@ -8,20 +8,30 @@ p {
     color: white;
 }
 
-h1 {
-    color: white;
-    font-weight: 700;
+ h1 {
+  font-size: 88px;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 2px;
+}
+@media (max-width: 575.98px) {
+  h1{
+    font-size: 3.2rem;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 2px;
+  }
 }
 
-.Premiere {
+/* .Premiere {
     font-family: Avenir;
     font-size: 21px;
-}
+} */
 
-.bringing {
+/* .bringing {
     font-family: Avenir;
     font-size: 13px;
-}
+} */
 
 .buy-btn {
     background: #E4AD27;
@@ -30,6 +40,9 @@ h1 {
     font-size: 12px;
     padding-left: 40px;
     padding-right: 40px;
+}
+.top-pad{
+
 }
 
 .nav-link {
@@ -78,5 +91,9 @@ h1 {
         height: 106px;
         position: absolute;
         right: 35%;
+    }
+
+    .top-pad{
+      margin-top: -60px;
     }
 }

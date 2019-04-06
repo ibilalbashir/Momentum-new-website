@@ -1,187 +1,284 @@
-<div class="container-fluid">
-  <div class="d-none d-md-block">
-    <div class="row ">
-      <div class='sprite shape4'></div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card class="first-card border-0 mat-elevation-z0">
-          <h1>
-            Here’s what<br />
-            to expect at<br />
-            Momentum<br />
-            2019
-          </h1>
-        </mat-card>
-      </div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/startup100Logo.png" />
-          <br />
-          <h5><b>Startup 100</b></h5>
+<div class="container-fluid v_background">
+  <!-- <div class="d-none d-md-block"> -->
+  <div class="row top-pad">
+    <div class='sprite shape4'></div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="first-card border-0 mat-elevation-z0 service-card">
+        <h1>
+          Here’s what<br />
+          to expect at<br />
+          Momentum<br />
+          2019
+        </h1>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12 mat-hover">
+      <mat-card class="yellow-shadow service-card">
+        <img class="img-fluid" src="../../../assets/startup100Logo.png" />
+        <br />
+        <h5><b>Startup 100</b></h5>
 
-          <mat-card-content>
-            Do you have an idea that can impact? Have a product that could disrupt
-            an industry? Your startup could be the next big thing at Momentum
-            2019. Registration is open, apply now!
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/networkingLoungeLogo.png" />
-          <h5><b>Networking Lounge</b></h5>
-          <mat-card-content>
-            Connect with industry bigwigs and supercharge your discussions without
-            needing to spread it out over an email chain across weeks!
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/officeHoursLogo.png" />
-          <h5><b>Office Hours</b></h5>
-          <mat-card-content>
-            Tailor your business to perform at its peak! Understand what it takes
-            to run a well-oiled machine and how to optimize your way through
-            challenges.
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/musicLogo.png" />
-          <h5><b>Music & Entertainment</b></h5>
-          <mat-card-content>
-            Work & play go hand in hand! When we aren’t working, we’re exploring
-            the intersections of tech & entertainment through interactive exhibits
-            and live entertainment acts.
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/mainConferenceLogo.png" />
-          <h5><b>Main Conference</b></h5>
-          <mat-card-content>
-            11,000+ Attendees, 300+ Startups & 60+ Investors alongside global
-            technology partners that power giants around the world. Find your
-            reason to attend yet?
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/FYPLogo.png" />
-          <h5><b>FYP Pitching</b></h5>
-          <mat-card-content>
-            Do you have an idea that can impact? Have a product that could disrupt
-            an industry? Your startup could be the next big thing at Momentum
-            2019. Registration is open, apply now!
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/influencersLogo.png" />
-          <h5><b>Influencers</b></h5>
-          <mat-card-content>
-            It isn’t just about industry professionals, its about influential that
-            can help seed your message to the masses. You never know who you’ll
-            find on the conference floors.
-          </mat-card-content>
-        </mat-card>
-      </div>
+        <mat-card-content>
+          Momentum 2019 is about being the Launchpad of another top 100 startups and SMEs of the country. We believe
+          in scaling businesses like never before.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/networkingLoungeLogo.png" />
+        <h5><b>Networking</b></h5>
+        <mat-card-content>
+          The leading technology and entrepreneurial ecosystem platform, Momentum 2019 is all set to host startups,
+          SMEs, entrepreneurs, investors and multinational companies at our flagship event in Karachi.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card (click)="hackathonRoute()" class="service-card">
+        <img class="img-fluid" src="../../../assets/Fintech.png" />
+        <h5><b> Fintech Hackathon </b></h5>
+        <mat-card-content>
+          Technology is the way into the future, so at Fintech Hackathon, we make teams gather around a huddle and ask
+          them to ‘Get It Done’.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/musicLogo.png" />
+        <h5><b>Music & Entertainment</b></h5>
+        <mat-card-content>
+          Festive and electrifying congregation of the accomplished – Momentum is back. Leading musicians are coming
+          to make the whole ‘Momentum Experience’ more than just a learning for you.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/mainConferenceLogo.png" />
+        <h5><b>Conference</b></h5>
+        <mat-card-content>
+          This year, Momentum is about ‘Get It Done’ – so we will discuss the funnel of activities to identify
+          roadblocks and maximize economic benefits for everyone.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/Launch-pad.png" />
+        <h5><b>Product Launches </b></h5>
+        <mat-card-content>
+          Momentum knows that ‘Saying No without Knowing’ is an absolute kill for products you believed in, therefore,
+          proud
+          to host ‘Product Launches’ at the event this year. Come and take first hand experience.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/workshop.png" />
+        <h5><b>Workshops</b></h5>
+        <mat-card-content>
+          At Momentum 2019, we are addressing the greatest challenge of Corporate Innovation at workplace by offering
+          workshops and trainings by the best global trainers and thought leaders.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/Careers.png" />
+        <h5><b>Career Expo </b></h5>
+        <mat-card-content>
+
+          Looking for a right job or looking for a right candidate for your business? Momentum 2019 gives opportunity
+          to both, employer and employee to network and find common grounds.
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/influencersLogo.png" />
+        <h5><b> Startup & Tech Expo </b></h5>
+        <mat-card-content>
+
+          The Startup & Tech Expo at Momentum 2019 is designed to inspire and encourage the cutting-edge technology
+          and innovation that is shaping the future altogether.
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="service-card">
+        <img class="img-fluid" src="../../../assets/Experience Center.png" />
+        <h5><b> Experience Centers </b></h5>
+        <mat-card-content>
+
+          Out of the world experiences set up by some of the best Global & Local companies in the tech ecosystem, get
+          ready to have your mind blown!
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 col-xs-12">
+      <mat-card class="first-card border-0 mat-elevation-z0 service-card" (click)="buyTicketRoute()">
+        <h1>
+          Get your <br> tickets now!
+
+        </h1>
+        <button class="btn btn-lg btn-block " style="background: #E4AD27; color: white; margin-top: 76px"
+          (click)="buyTicketRoute()">Buy
+          Now</button>
+      </mat-card>
     </div>
   </div>
+</div>
 
-  <div class='sprite shape5'></div>
+<div class='sprite shape5 d-none '></div>
 
 
-  <div class="d-xs-block s-sm-block d-md-none">
+<!-- <div class="d-xs-block s-sm-block d-md-none">
+    <div class="text-center">
+      <h1 style="color: white">
+        Here’s what<br />
+        to expect at<br />
+        Momentum<br />
+        <span style='color: #E4AD27'>2019</span>
+      </h1>
+    </div>
     <ngb-carousel>
 
       <ng-template ngbSlide>
-        <mat-card>
+        <mat-card class=" service-card">
           <img class="img-fluid" src="../../../assets/startup100Logo.png" />
           <br />
           <h5><b>Startup 100</b></h5>
-          <!-- <div class="carousel-caption">
-            Startup 100 cap
-          </div> -->
 
           <mat-card-content>
-            Do you have an idea that can impact? Have a product that could disrupt
-            an industry? Your startup could be the next big thing at Momentum
-            2019. Registration is open, apply now!
+            Momentum 2019 is about being the Launchpad of another top 100 startups and SMEs of the country. We believe
+            in scaling businesses like never before.
           </mat-card-content>
         </mat-card>
       </ng-template>
       <ng-template ngbSlide>
-        <mat-card>
+        <mat-card class="service-card">
           <img class="img-fluid" src="../../../assets/networkingLoungeLogo.png" />
-          <h5><b>Networking Lounge</b></h5>
+          <h5><b>Networking</b></h5>
           <mat-card-content>
-            Connect with industry bigwigs and supercharge your discussions without
-            needing to spread it out over an email chain across weeks!
+            Momentum 2019 is about being the Launchpad of another top 100 startups and SMEs of the country. We believe
+            in scaling businesses like never before.
           </mat-card-content>
         </mat-card>
       </ng-template>
       <ng-template ngbSlide>
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/officeHoursLogo.png" />
-          <h5><b>Office Hours</b></h5>
+        <mat-card (click)="hackathonRoute()" class="service-card">
+          <img class="img-fluid" src="../../../assets/Fintech.png" />
+          <h5><b> Fintech Hackathon </b></h5>
           <mat-card-content>
-            Tailor your business to perform at its peak! Understand what it takes
-            to run a well-oiled machine and how to optimize your way through
-            challenges.
+            Technology is the way into the future, so at Fintech Hackathon, we make teams gather around a huddle and ask
+            them to ‘Get It Done’.
           </mat-card-content>
         </mat-card>
       </ng-template>
       <ng-template ngbSlide>
-        <mat-card>
+        <mat-card class="service-card">
           <img class="img-fluid" src="../../../assets/musicLogo.png" />
           <h5><b>Music & Entertainment</b></h5>
           <mat-card-content>
-            Work & play go hand in hand! When we aren’t working, we’re exploring
-            the intersections of tech & entertainment through interactive exhibits
-            and live entertainment acts.
+            Festive and electrifying congregation of the accomplished – Momentum is back. Leading musicians are coming
+            to make the whole ‘Momentum Experience’ more than just a learning for you.
           </mat-card-content>
         </mat-card>
       </ng-template>
       <ng-template ngbSlide>
-        <mat-card>
+        <mat-card class="service-card">
           <img class="img-fluid" src="../../../assets/mainConferenceLogo.png" />
-          <h5><b>Main Conference</b></h5>
+          <h5><b>Conference</b></h5>
           <mat-card-content>
-            11,000+ Attendees, 300+ Startups & 60+ Investors alongside global
-            technology partners that power giants around the world. Find your
-            reason to attend yet?
+            This year, Momentum is about ‘Get It Done’ – so we will discuss the funnel of activities to identify
+            roadblocks and maximize economic benefits for everyone.
           </mat-card-content>
         </mat-card>
       </ng-template>
       <ng-template ngbSlide>
-        <mat-card>
-          <img class="img-fluid" src="../../../assets/FYPLogo.png" />
-          <h5><b>FYP Pitching</b></h5>
+        <mat-card class="service-card">
+          <img class="img-fluid" src="../../../assets/Launch-pad.png" />
+          <h5><b>Product Launches </b></h5>
           <mat-card-content>
-            Do you have an idea that can impact? Have a product that could disrupt
-            an industry? Your startup could be the next big thing at Momentum
-            2019. Registration is open, apply now!
+            Momentum knows that ‘No without Knowing’ is an absolute kill for products you believed in, therefore, proud
+            to host ‘Product Launch’ at the event this year. Come. Experience.
           </mat-card-content>
         </mat-card>
       </ng-template>
       <ng-template ngbSlide>
-        <mat-card>
+        <mat-card class="service-card">
+          <img class="img-fluid" src="../../../assets/workshop.png" />
+          <h5><b>Workshops</b></h5>
+          <mat-card-content>
+            At Momentum 2019, we are addressing the greatest challenge of Corporate Innovation at workplace by offering
+            workshops and trainings by the best global trainers and thought leaders.
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template ngbSlide>
+        <mat-card class="service-card">
+          <img class="img-fluid" src="../../../assets/Careers.png" />
+          <h5><b>Career Expo </b></h5>
+          <mat-card-content>
+
+            Looking for a right job or looking for a right candidate for your business? Momentum 2019 gives opportunity
+            to both, employer and employee to network and find common grounds.
+
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template ngbSlide>
+        <mat-card class="service-card">
           <img class="img-fluid" src="../../../assets/influencersLogo.png" />
-          <h5><b>Influencers</b></h5>
+          <h5><b> Startup & Tech Expo </b></h5>
           <mat-card-content>
-            It isn’t just about industry professionals, its about influential that
-            can help seed your message to the masses. You never know who you’ll
-            find on the conference floors.
+
+            The Startup & Tech Expo at Momentum 2019 is designed to inspire and encourage the cutting-edge technology
+            and innovation that is shaping the future altogether.
+
           </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template ngbSlide>
+        <mat-card class="service-card">
+          <img class="img-fluid" src="../../../assets/Experience Center.png" />
+          <h5><b> Experience Centers </b></h5>
+          <mat-card-content>
+
+            Out of the world experiences set up by some of the best Global & Local companies in the tech ecosystem, get
+            ready to have your mind blown!
+
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template ngbSlide>
+        <mat-card class="service-card">
+          <img class="img-fluid" src="../../../assets/Experience Center.png" />
+          <h5><b> Experience Centers </b></h5>
+          <mat-card-content>
+
+            Out of the world experiences set up by some of the best Global & Local companies in the tech ecosystem, get
+            ready to have your mind blown!
+
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+      <ng-template ngbSlide>
+        <mat-card class="first-card border-0 mat-elevation-z0 service-card" (click)="buyTicketRoute()">
+          <h1>
+            Get your <br> tickets now!
+
+          </h1>
         </mat-card>
       </ng-template>
 
     </ngb-carousel>
-  </div>
+  </div> -->
 
-</div>
+<!-- </div> -->

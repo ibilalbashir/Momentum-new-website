@@ -6,7 +6,7 @@
 }
 
 .footer-container {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 
@@ -104,4 +104,13 @@ li a {
   padding-top: 10px;
   margin-left: 18px;
   margin-right: 18px;
+}
+ .top-padd{
+    padding-top: 75px;
+  }
+
+@media only screen and (max-width: 600px) {
+  .top-padd{
+    padding-top: 20px;
+  }
 }

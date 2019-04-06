@@ -1,46 +1,55 @@
 <div class="text-center">
-    <div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
+  <div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
 
 
-                <!---navbar-->
+        <!---navbar-->
 
-                <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active">
-                        <img class="logo" src="../../../assets/logo.png" alt="">
-                    </a>
-                    <button class="navbar-toggler border-0" (click)="isCollapsed = !isCollapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active">
+            <img class="logo" src="../../../assets/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler border-0" (click)="isCollapsed = !isCollapsed" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">TRACKS <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SPEAKERS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" [routerLink]="['/partners']" routerLinkActive="router-link-active">PARTNERS</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link border" [routerLink]="['/buy-ticket']" routerLinkActive="router-link-active">TICKETS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link border" href="#">STARTUPS</a>
-                            </li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ml-auto">
+              <!-- <li class="nav-item active" style='padding: 20px'>
+                <a class="nav-link" href="#">TRACKS <span class="sr-only">(current)</span></a>
+              </li> -->
+              <!-- <li class="nav-item" style='padding: 20px'>
+                <a class="nav-link" href="#"> SPEAKERS</a>
+              </li> -->
+              <!-- <li class="nav-item" style='padding: 20px'>
+                <a class="nav-link" [routerLink]="['/partners']" routerLinkActive="router-link-active">PARTNERS</a>
+              </li> -->
+              <li class="nav-item " style="padding-top: 20px">
+                <a class="nav-link border border-warning" style="padding-left: 40px; padding-right: 40px ;"
+                  [routerLink]="['/buy-ticket']" routerLinkActive="router-link-active" [routerLink]="['/buy-ticket']"
+                  routerLinkActive="router-link-active">TICKETS</a>
+              </li>
+              <li class="nav-item" style="padding-top: 20px; ">
+                <a class="nav-link border border-warning" style="padding-left: 40px; padding-right: 40px;"
+                  href="http://blog.momentum.org.pk/" target="_blank">BLOG</a>
+              </li>
+              <!-- <li class="nav-item" style="padding-top: 20px; ">
+                <a class="nav-link border border-warning" style="padding-left: 40px; padding-right: 40px;"
+                  href="#">STARTUPS</a>
+              </li> -->
 
-                        </ul>
+            </ul>
 
-                    </div>
-                </nav>
-                <!---navbar ends here-->
-            </div>
-        </header>
+          </div>
+        </nav>
+        <!---navbar ends here-->
+      </div>
+    </header>
 
-        <!-- <main role="main" class="inner cover">
+    <!-- <main role="main" class="inner cover">
 
       <div class='sprite shape1'></div>
       <br><br><br><br><br><br>
@@ -61,7 +70,7 @@
     <div class="col-11 ">
 
     </div> -->
-    </div>
+  </div>
 
 
 </div>

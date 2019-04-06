@@ -2,7 +2,7 @@
   <div class="heading">
     {{name}}
   </div>
-  <div class="body h-100">
+  <div class="body h-100" style="padding-left: 12px; padding-right: 12px;">
     <span class="price">PKR {{price}}</span>
     <ul>
       <li *ngFor="let item of features">
@@ -12,6 +12,7 @@
 
   </div>
   <div class="buy-button position-absolute">
-    <button class="btn" style="z-index: 2">Buy Button</button>
+    <button class="btn" style="z-index: 2" (click)="openDialog()">{{btn}}</button>
+
   </div>
 </div>

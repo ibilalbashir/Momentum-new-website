@@ -3,15 +3,23 @@ li {
   position: relative;
 }
 
+.s-background{
+  background:url('../../../assets/image/videoBackground.jpg')
+}
+
 .container-fluid {
-  background: #E35045;
+
   padding-top: 50px;
   position: relative;
 }
 
 h1 {
   color: white;
-  font-weight: 600
+  font-weight: 600;
+  font-size:2.0rem;
+}
+.first-card{
+  font-size: 2.5rem !important;
 }
 
 img {
@@ -21,22 +29,27 @@ img {
 }
 
 .speakerName {
+  top: 44%;
+
+    right: 99px;
   position: absolute;
-  top: 45%;
-  right: 53px;
+
 }
 
 .speakerName-col-2 {
-  right: 30%;
+  top: 43%;
+    right: 32%;
+
   position: absolute;
-  top: 45%;
+
 }
 
 .speakerdesignation {
-  right: 60px;
+  right: 100px;
   position: absolute;
   top: 55%;
 }
+
 
 .speakerdesignation-col-2 {
   right: 30%;
@@ -101,28 +114,22 @@ p {
 
 @media only screen and (max-width: 990px) {
   .speakerName {
+    right: 2px;
     position: absolute;
-    top: 45%;
-    right: 53px;
+
   }
 
   .speakerName-col-2 {
+    right: 2px;
     position: absolute;
-    top: 45%;
-    right: 53px;
+
   }
 
-  .speakerdesignation {
-    right: 60px;
-    position: absolute;
-    top: 55%;
-  }
 
-  .speakerdesignation-col-2 {
-    right: 60px;
-    position: absolute;
-    top: 55%;
-  }
+}
+
+.first-card-caption{
+  padding-right: 27%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -131,4 +138,29 @@ p {
     height: 200px !important;
     width: 200px;
   }
+  .speakerdesignation-col-2 {
+    right: 17%;
+    position: absolute;
+    top: 60%;
+  }
+  .speakerdesignation {
+    right: 17%;
+    position: absolute;
+    top: 60%;
+  }
+  li{
+    padding-top: 30px
+  }
+  .first-card-caption{
+    padding-right: 0 !important
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1-pad{
+    padding-left: 120px;
+  }
+
+
+
 }

@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpeakersContainerComponent implements OnInit {
 
+  speakersObj = [
+    {
+      name: 'Speaker Name',
+      designation: 'designation',
+      imageUrl: ''
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

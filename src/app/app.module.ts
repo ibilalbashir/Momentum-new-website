@@ -12,11 +12,16 @@ import { MomentumPartnersModule } from './momentum-partners/momentum-partners.mo
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { StartupDialogComponent } from './startup-dialog/startup-dialog.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule],
+  declarations: [AppComponent, StartupDialogComponent],
+  imports: [BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule, MatDialogModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    StartupDialogComponent
+  ]
 })
-export class AppModule {}
+export class AppModule { }
