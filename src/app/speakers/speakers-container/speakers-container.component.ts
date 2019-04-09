@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs';
+import { SpeakerServices } from './../../../Shared/services/speaker.services';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,18 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpeakersContainerComponent implements OnInit {
 
-  speakersObj = [
-    {
-      name: 'Speaker Name',
-      designation: 'designation',
-      imageUrl: ''
-    }
-  ];
+  $speakers: Observable<object>;
+  speakersObj;
 
-  constructor() { }
+  constructor(private services: SpeakerServices) { }
 
   ngOnInit() {
-
+    this.$speakers = this.services.getSpeakers();
+    this.$speakers.subscribe(res => {
+      this.speakersObj = res;
+      console.log('res is ', this.speakersObj)
+    }, err => {
+      console.log(err)
+    })
   }
 
 }

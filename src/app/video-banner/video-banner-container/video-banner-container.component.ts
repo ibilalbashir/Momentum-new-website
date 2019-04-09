@@ -36,6 +36,8 @@ export class VideoBannerContainerComponent implements OnInit {
       this.reframed = false;
       this.player = new window['YT'].Player('player', {
         videoId: this.video,
+
+
         events: {
           'onStateChange': this.onPlayerStateChange.bind(this),
           'onError': this.onPlayerError.bind(this),

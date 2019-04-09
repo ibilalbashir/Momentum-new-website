@@ -31,7 +31,7 @@ img {
 .speakerName {
   top: 44%;
 
-    right: 99px;
+    right: 30%;
   position: absolute;
 
 }
@@ -45,7 +45,7 @@ img {
 }
 
 .speakerdesignation {
-  right: 100px;
+  right: 30%;
   position: absolute;
   top: 55%;
 }
@@ -109,6 +109,12 @@ p {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.display-block{
+  display: block;
+}
+.display-none{
+  display: none;
 }
 
 

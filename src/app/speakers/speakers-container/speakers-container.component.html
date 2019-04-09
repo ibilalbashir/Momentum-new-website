@@ -11,7 +11,14 @@
           <h1 class="first-card text-center first-card-caption">Meet the<br> <span style="color: #E4AD27">2017/18</span>
             <br> Speakers</h1>
         </li>
-        <li style="position: relative">
+        <li style="position: relative" *ngFor="let item of speakersObj; let even = even; let odd = odd"
+          [ngClass]="{'display-block': odd, 'display-none':even}">
+          <img src={{item.image}} alt="">
+          <h1 class="speakerName">{{item.name}}</h1>
+          <p class="speakerdesignation">{{item.company}}</p>
+
+        </li>
+        <!-- <li style="position: relative">
           <img src="../../../assets/speakers/imran-khan.png" alt="">
           <h1 class="speakerName">Imran Khan</h1>
           <p class="speakerdesignation">PM Pakistan</p>
@@ -30,13 +37,20 @@
           <img src="../../../assets/speakers//Eduardo Aspillga.png" alt="">
           <h1 class="speakerName">Eduardo Aspillga</h1>
           <p class="speakerdesignation">IBM</p>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class="col-md-6 col-sm-12 col-xs-12">
       <div class='sprite shape7'></div>
       <ul>
-        <li>
+        <li style="position: relative" *ngFor="let item of speakersObj; let even = even; let odd = odd"
+          [ngClass]="{'display-none': odd, 'display-block':even}">
+          <img src={{item.image}} alt="">
+          <h1 class="speakerName">{{item.name}}</h1>
+          <p class="speakerdesignation">{{item.company}}</p>
+
+        </li>
+        <!--<li>
           <img src="../../../assets/speakers/Jon-Austin.png" alt="">
           <h1 class="speakerName-col-2">Jon Austin</h1>
           <p class="speakerdesignation-col-2">Amazon Web Services</p>
@@ -55,66 +69,9 @@
           <img src="../../../assets/speakers/sarim-aziz.png" alt="">
           <h1 class="speakerName-col-2">Sarim Aziz</h1>
           <p class="speakerdesignation-col-2">Facebook </p>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
   <div class="bottom-right-yellow-bar"></div>
 </div>
-
-
-<!-- <div class="row">
-
-    <div class="col-12 d-xs-block s-sm-block d-md-block d-lg-none">
-      <div class="text-center">
-        <h1>Meet the <span style="color: #E4AD27">2017/18</span> Speakers</h1>
-      </div>
-
-      <ngb-carousel [showNavigationIndicators]="false">
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers/imran-khan.png" alt="">
-          <h1 class="speakerName">Imran Khan</h1>
-          <p class="speakerdesignation">PM Pakistan</p>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers/Amir Ibrahim - CEO - JAZZ.png" alt="">
-          <h1 class="speakerName">Aamir Ibrahim</h1>
-          <p class="speakerdesignation">CEO - Jazz</p>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers/Chrystele Dumont.png" alt="">
-          <h1 class="speakerName">Chrystele Dumont</h1>
-          <p class="speakerdesignation">Microsoft</p>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers//Eduardo Aspillga.png" alt="">
-          <h1 class="speakerName">Eduardo Aspillga</h1>
-          <p class="speakerdesignation">IBM</p>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers/Jon-Austin.png" alt="">
-          <h1 class="speakerName-col-2">Jon Austin</h1>
-          <p class="speakerdesignation-col-2">Amazon Web Services</p>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers/lashley-pulsipher.png" alt="">
-          <h1 class="speakerName-col-2">Lashley Pulsipher</h1>
-          <p class="speakerdesignation-col-2">Hashoo Group </p>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers/mudassir-759x500.png" alt="">
-          <h1 class="speakerName-col-2">Mudassir Sheikha</h1>
-          <p class="speakerdesignation-col-2">Careem</p>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../../../assets/speakers/sarim-aziz.png" alt="">
-          <h1 class="speakerName-col-2">Sarim Aziz</h1>
-          <p class="speakerdesignation-col-2">Facebook </p>
-        </ng-template>
-
-      </ngb-carousel>
-    </div>
-  </div> -->
-
-
-<!-- </div> -->

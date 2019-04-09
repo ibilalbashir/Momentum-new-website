@@ -14,10 +14,11 @@ import { AppRoutingModule } from './app.routing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { StartupDialogComponent } from './startup-dialog/startup-dialog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, StartupDialogComponent],
-  imports: [BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule, MatDialogModule],
+  imports: [BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule, MatDialogModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [

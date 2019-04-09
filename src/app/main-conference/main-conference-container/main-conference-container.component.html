@@ -18,27 +18,38 @@
         <div class="row tabs">
           <div class="col-12">
             <mat-tab-group mat-stretch-tabs>
-              <mat-tab label="Tuesday 30th Apr">
-                <div class="border">
+              <mat-tab [label]=date1>
+                <div class="border" *ngFor="let item of index1">
                   <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
                     <div class="col-md-3 col-sm-12 col-xs-12">
                       <div class="clip">
-                        <p class="time-stamp">10:00 - 10:30</p>
+                        <p class="time-stamp">{{item.from}} - {{item.to}}</p>
                       </div>
                     </div>
                     <div class="col-md-9 col-sm-12 col-xs-12">
                       <h4 class="card-heading">
-                        Intelligently Connecting the world
+                        {{item.name}}
                       </h4>
 
-                      <p>Add some text</p>
+                      <p>{{item.description}}</p>
 
                       <p class="grey-font">
                         <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
-                        Keynote Speaker
+                        {{item.type}}
                       </p>
+                      <!-- <p class="grey-font">
+                        {{item.participant[0].name}}
+                      </p>
+                      <img  src={{item.participant[0].imgUrl}} alt=""> -->
+                      <div class="row">
+                        <div class="speaker-card col-2 border-left" *ngFor="let i of item.participant">
+                          <img class="speaker-img" src={{i.imgUrl}} alt="">
+                          <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
+                        </div>
+                      </div>
 
-                      <p class="grey-font">
+
+                      <p class="grey-font" style="padding-top: 40px">
                         <i class="keynote">
                           <img src="../../../assets/wordpress.png" alt="" />
                         </i>
@@ -47,56 +58,51 @@
                     </div>
                   </div>
                 </div>
-                <div class="border">
-                  <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                      <div class="clip">
-                        <p class="time-stamp">10:00 - 10:30</p>
-                      </div>
-                    </div>
-                    <div class="col-md-9 col-sm-12 col-xs-12">
-                      <h4 class="card-heading">
-                        Intelligently Connecting the world
-                      </h4>
 
-                      <p>Add some text</p>
-
-                      <p class="grey-font">
-                        <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
-                        Keynote Speaker
-                      </p>
-
-                      <p class="grey-font">
-                        <i class="keynote">
-                          <img src="../../../assets/wordpress.png" alt="" />
-                        </i>
-                        wordpress, event, startup, business
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </mat-tab>
-              <mat-tab label="Wednesday 1st May ">
-                <div class="border">
-                  <div class="row">
+              <mat-tab [label]=date2>
+                <div class="border" *ngFor="let item of index2">
+                  <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
                     <div class="col-md-3 col-sm-12 col-xs-12">
                       <div class="clip">
-                        <p class="time-stamp">10:00 - 10:30</p>
+                        <p class="time-stamp">{{item.from}} - {{item.to}}</p>
                       </div>
                     </div>
                     <div class="col-md-9 col-sm-12 col-xs-12">
                       <h4 class="card-heading">
-                        Intelligently Connecting the world
+                        {{item.name}}
                       </h4>
 
-                      <p>Add some text</p>
+                      <p>{{item.description}}</p>
 
                       <p class="grey-font">
                         <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
-                        Keynote Speaker
+                        {{item.type}}
                       </p>
+                      <div class="row">
 
-                      <p class="grey-font">
+                        <div class="speaker-card col-3 " *ngFor="let i of item.participant">
+                          <div class="row">
+                            <div class="col-12" *ngIf="item.type == 'moderator'"></div>
+
+
+                            <div class="col-3">
+
+                              <img class="speaker-img" src={{i.imgUrl}} alt="">
+
+                            </div>
+                            <div class="col-9">
+                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <p style="padding-top: 40px;" class="grey-font">
                         <i class="keynote">
                           <img src="../../../assets/wordpress.png" alt="" />
                         </i>
@@ -105,34 +111,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="border">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                      <div class="clip">
-                        <p class="time-stamp">10:00 - 10:30</p>
-                      </div>
-                    </div>
-                    <div class="col-md-9 col-sm-12 col-xs-12">
-                      <h4 class="card-heading">
-                        Intelligently Connecting the world
-                      </h4>
 
-                      <p>Add some text</p>
-
-                      <p class="grey-font">
-                        <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
-                        Keynote Speaker
-                      </p>
-
-                      <p class="grey-font">
-                        <i class="keynote">
-                          <img src="../../../assets/wordpress.png" alt="" />
-                        </i>
-                        wordpress, event, startup, business
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </mat-tab>
             </mat-tab-group>
           </div>
