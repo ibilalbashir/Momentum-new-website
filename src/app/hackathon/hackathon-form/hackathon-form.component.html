@@ -1,0 +1,143 @@
+<form [formGroup]="qFormGroup">
+  <p style="color: #E15149">Hackathon Registration Form
+
+  </p>
+  <hr>
+  <div class="row">
+
+
+    <div class="col-md-12 col-xs-12 col-sm-12 " appearance="outline">
+
+      <div class="row">
+
+
+        <div class="col-md-4 col-xs-12 col-sm-12">
+          <mat-form-field class="w-100">
+            <input formControlName="startupName" matInput placeholder="Startup Name">
+          </mat-form-field>
+        </div>
+
+
+
+        <div class="col-md-4 col-xs-12 col-sm-12">
+          <mat-form-field class="w-100">
+            <input formControlName="founderName" matInput placeholder="Startup Founder Name">
+          </mat-form-field>
+        </div>
+
+
+
+        <div class="col-md-4 col-xs-12 col-sm-12">
+          <mat-form-field class="w-100">
+            <input formControlName="email" matInput placeholder="Email">
+          </mat-form-field>
+        </div>
+
+
+
+        <div class="col-md-6 col-xs-12 col-sm-12">
+          <mat-form-field class="w-100">
+            <input formControlName="phone" matInput placeholder="Phone">
+          </mat-form-field>
+        </div>
+
+
+
+        <div class="col-md-6 col-xs-12 col-sm-12">
+          <mat-form-field class="w-100">
+            <input formControlName="website" matInput placeholder="Web URL">
+          </mat-form-field>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-md-12 col-xs-12 col-sm-12 ">
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p>When was your startup/organization founded?</p>
+        </div>
+
+        <mat-form-field appearance="outline" class="col-md-6 col-sm-12 col-xs-12">
+          <mat-label>Your answer</mat-label>
+          <input formControlName="a1" matInput placeholder="Your answer">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p>What is the total human resource strength of your startup/organization</p>
+        </div>
+
+        <mat-form-field appearance="outline" class="col-md-6 col-sm-12 col-xs-12">
+          <mat-label>Your answer</mat-label>
+          <input formControlName="a2" matInput placeholder="Your answer">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p>Have you ever worked in the fintech space before, if yes then with which organization?</p>
+        </div>
+
+        <mat-form-field appearance="outline" class="col-md-6 col-sm-12 col-xs-12">
+          <mat-label>Your answer</mat-label>
+          <input formControlName="a3" matInput placeholder="Your answer">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p>How do you define a Fintech ?How do you define a Fintech</p>
+        </div>
+
+        <mat-form-field appearance="outline" class="col-md-6 col-sm-12 col-xs-12">
+          <mat-label>Your answer</mat-label>
+          <input formControlName="a4" matInput placeholder="Your answer">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p>Do you have experience in working with Open APIs?</p>
+        </div>
+
+        <mat-form-field appearance="outline" class="col-md-6 col-sm-12 col-xs-12">
+          <mat-label>Your answer</mat-label>
+          <input formControlName="a5" matInput placeholder="Your answer">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p>What do you intend to achieve out of participating in this hackathon</p>
+        </div>
+
+        <mat-form-field appearance="outline" class="col-md-6 col-sm-12 col-xs-12">
+          <mat-label>Your answer</mat-label>
+          <textarea formControlName="a6" matInput placeholder="Your answer"></textarea>
+          <mat-hint>(maximum 100-150 words)</mat-hint>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p>What inspired you to setup your own startup?</p>
+        </div>
+
+        <mat-form-field appearance="outline" class="col-md-6 col-sm-12 col-xs-12">
+          <mat-label>Your answer</mat-label>
+          <input formControlName="a7" matInput placeholder="Your answer">
+
+        </mat-form-field>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="col-12">
+      <button (click)="formSubmit()" type="button" class="btn btn-outline-dark btn-lg btn-block">Submit</button>
+    </div>
+
+  </div>
+</form>

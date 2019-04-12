@@ -1,6 +1,11 @@
-<app-header-container></app-header-container>
+<app-header-container autoscroll="true"></app-header-container>
+
 <div class="routing">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 
+
 <app-footer-container></app-footer-container>
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#E35045" type="line-scale-party">
+  <p style="font-size: 20px; color: #E35045"></p>
+</ngx-spinner>

@@ -15,10 +15,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { StartupDialogComponent } from './startup-dialog/startup-dialog.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [AppComponent, StartupDialogComponent],
-  imports: [BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule, MatDialogModule, HttpClientModule],
+  imports: [NgxSpinnerModule, MatProgressSpinnerModule, MatProgressBarModule, BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule, MatDialogModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [

@@ -14,7 +14,8 @@
       <div class="row">
         <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 30px" *ngFor="let item of pricing;">
           <div class="p-table h-100">
-            <app-pricing-table [name]="item.name" [price]="item.price" [features]="item.features" [btn]="item.btn">
+            <app-pricing-table [name]="item.name" [price]="item.price" [features]="item.features" [btn]="item.btn"
+              [url]="item.url">
             </app-pricing-table>
 
           </div>

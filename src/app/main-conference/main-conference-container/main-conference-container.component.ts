@@ -1,5 +1,6 @@
 import { ConferenceServices } from './../../../Shared/services/conference.services';
 import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment'
 
 @Component({
   selector: 'app-main-conference-container',
@@ -11,11 +12,14 @@ export class MainConferenceContainerComponent implements OnInit {
   confsObj;
   date1;
   date2;
+  date1ToShow;
+  date2ToShow;
   newObj = [];
   index1 = [];
   index2 = [];
 
   constructor(private conferenceServices: ConferenceServices) { }
+
 
   ngOnInit() {
     this.$allConfs = this.conferenceServices.getConferences();
@@ -67,13 +71,27 @@ export class MainConferenceContainerComponent implements OnInit {
 
       // })
 
+
+
       console.log('date 1', this.date1);
       console.log('dat2 ', this.date2);
       console.log('index1', this.index1);
       console.log('index2', this.index2);
+      const newdate1 = this.date1.replace(new RegExp("/", "g"), '-')
+      console.log('new date', newdate1)
+      const fields = newdate1.split('-');
+      const fields2 = this.date2.split('/');
 
+      const d2 = fields2[2] + '-' + fields2[1] + '-' + fields2[0];
+      const d1 = fields[2] + '-' + fields[1] + '-' + fields[0];
+      console.log('d1', d1)
+      console.log('d2', d2)
 
-
+      // console.log(moment(newdate1).format("MMM"))
+      console.log(moment(new Date(d1)).format('MMMM Do YYYY'));
+      this.date1ToShow = moment(new Date(d1)).format('MMMM Do ');
+      this.date2ToShow = moment(new Date(d2)).format('MMMM Do ');
+      console.log(this.date2ToShow)
 
       //
 

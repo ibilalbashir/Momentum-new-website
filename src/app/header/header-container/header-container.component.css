@@ -65,6 +65,9 @@ h1 {
 .navbar-inner {
   background:transparent;
 }
+a{
+  cursor: pointer;
+}
 
 
 .sprite {

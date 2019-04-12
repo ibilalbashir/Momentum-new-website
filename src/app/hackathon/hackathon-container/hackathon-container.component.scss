@@ -2,9 +2,24 @@
     .body {
         margin-bottom: 150px;
         margin-top: 70px;
+
     }
+
     p {
         color: #8e8e8e;
+    }
+    .apply-now-btn{
+      background: #E4AD27;
+      color: white;
+    }
+    .partner-card {
+
+    background-repeat: no-repeat !important;
+      background-size: contain !important;
+
+      background-position: center !important;
+      padding: 25px
+
     }
     .bg {
         background: url('../../../assets/event-detail-light.jpg');
@@ -28,6 +43,8 @@
     .circ-check {
         li {
             color: #8e8e8e;
+            padding-left: 1.28571429em;
+    text-indent: -2.285714em;
         }
         li:before {
             content: "\2713";
@@ -102,5 +119,31 @@
                 max-width: 77px;
             }
         }
+    }
+    @media only screen and (max-width: 600px) {
+      .circ-check {
+        li {
+            color: #8e8e8e;
+            padding-left: 0 !important;
+    text-indent: 0 !important;
+        }
+        li:before {
+            content: "\2713";
+            background: #E4AD27;
+            color: #ffeec6;
+            border-radius: 50%;
+            padding: 3px 7px;
+            font-weight: bold;
+            font-size: 11px;
+            margin-right: 10px;
+        }
+    }
+
+    .partner-card {
+
+
+        padding: 20px
+
+      }
     }
 }

@@ -26,6 +26,7 @@ mat-card {
   background:url('../../../assets/image/videoBackground.jpg');
   position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container-fluid {
@@ -38,10 +39,7 @@ img {
   margin: 15px;
 }
 
-.container-fluid {
-  /* padding-bottom: 50px;
-  padding-top: 70px; */
-}
+
 
 .sprite {
   background: url('../../../assets/sprite.png') no-repeat top left;
@@ -67,33 +65,7 @@ img {
 
 
 
-#ngb-slide-0 {
-  background-color: black !important;
-}
 
-#ngb-slide-1 {
-  background-color: black !important;
-}
-
-#ngb-slide-2 {
-  background-color: black !important;
-}
-
-#ngb-slide-3 {
-  background-color: black !important;
-}
-
-#ngb-slide-4 {
-  background-color: black !important;
-}
-
-#ngb-slide-5 {
-  background-color: black !important;
-}
-
-#ngb-slide-6 {
-  background-color: black !important;
-}
 
 
 

@@ -4,10 +4,11 @@ import { HeaderContainerComponent } from './header-container/header-container.co
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
-  imports: [CommonModule, NgbModule, RouterModule],
+  imports: [CommonModule, NgbModule, RouterModule, NgxSpinnerModule],
   declarations: [HeaderContainerComponent],
   exports: [HeaderContainerComponent]
 })
-export class HeaderModule {}
+export class HeaderModule { }

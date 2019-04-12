@@ -17,8 +17,8 @@
       <div class="container">
         <div class="row tabs">
           <div class="col-12">
-            <mat-tab-group mat-stretch-tabs>
-              <mat-tab [label]=date1>
+            <mat-tab-group mat-stretch-tabs class="bottom-pad">
+              <mat-tab [label]=date1ToShow>
                 <div class="border" *ngFor="let item of index1">
                   <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
                     <div class="col-md-3 col-sm-12 col-xs-12">
@@ -37,16 +37,55 @@
                         <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
                         {{item.type}}
                       </p>
-                      <!-- <p class="grey-font">
-                        {{item.participant[0].name}}
-                      </p>
-                      <img  src={{item.participant[0].imgUrl}} alt=""> -->
+
+                      <!--row 1-->
                       <div class="row">
-                        <div class="speaker-card col-2 border-left" *ngFor="let i of item.participant">
-                          <img class="speaker-img" src={{i.imgUrl}} alt="">
-                          <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
+
+                        <div class="speaker-card col-md-3 col-sm-6 " *ngFor="let i of item.participant"
+                          [ngClass]="{'hide-it':i.type === 'speaker' }">
+                          <div class="row" *ngIf="i.type == 'moderator'">
+
+
+
+                            <div class="col-3">
+
+                              <img class="speaker-img" src={{i.imgUrl}} alt="">
+
+                            </div>
+                            <div class="col-9">
+                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
+                            </div>
+
+                          </div>
+
                         </div>
+
                       </div>
+
+                      <!--row 2-->
+                      <div class="row speaker-card-pad">
+
+                        <div class="speaker-card col-3" *ngFor="let i of item.participant"
+                          [ngClass]="{'hide-it':i.type === 'moderator' }">
+                          <div class="row" *ngIf="i.type != 'moderator'">
+                            <div class="col-12"></div>
+
+
+                            <div class="col-3">
+
+                              <img class="speaker-img" src={{i.imgUrl}} alt="">
+
+                            </div>
+                            <div class="col-9">
+                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <!--row 2 ends here-->
 
 
                       <p class="grey-font" style="padding-top: 40px">
@@ -60,7 +99,7 @@
                 </div>
 
               </mat-tab>
-              <mat-tab [label]=date2>
+              <mat-tab [label]=date2ToShow>
                 <div class="border" *ngFor="let item of index2">
                   <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
                     <div class="col-md-3 col-sm-12 col-xs-12">
@@ -79,11 +118,14 @@
                         <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
                         {{item.type}}
                       </p>
+
+                      <!--row 1-->
                       <div class="row">
 
-                        <div class="speaker-card col-3 " *ngFor="let i of item.participant">
-                          <div class="row">
-                            <div class="col-12" *ngIf="item.type == 'moderator'"></div>
+                        <div class="speaker-card col-md-3 col-sm-6 " *ngFor="let i of item.participant"
+                          [ngClass]="{'hide-it':i.type === 'speaker' }">
+                          <div class="row" *ngIf="i.type == 'moderator'">
+
 
 
                             <div class="col-3">
@@ -101,6 +143,30 @@
 
                       </div>
 
+                      <!--row 2-->
+                      <div class="row speaker-card-pad">
+
+                        <div class="speaker-card col-3" *ngFor="let i of item.participant"
+                          [ngClass]="{'hide-it':i.type === 'moderator' }">
+                          <div class="row" *ngIf="i.type != 'moderator'">
+                            <div class="col-12"></div>
+
+
+                            <div class="col-3">
+
+                              <img class="speaker-img" src={{i.imgUrl}} alt="">
+
+                            </div>
+                            <div class="col-9">
+                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <!--row 2 ends here-->
 
                       <p style="padding-top: 40px;" class="grey-font">
                         <i class="keynote">

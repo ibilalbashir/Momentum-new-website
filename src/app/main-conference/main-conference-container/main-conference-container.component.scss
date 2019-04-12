@@ -24,6 +24,11 @@
 
   .mat-tab-label {
     background: #E35045;
+
+  }
+  /deep/.mat-tab-label {
+
+    font-size: 17px !important;
   }
 
   .tabs {
@@ -36,6 +41,7 @@
 
   /deep/ .mat-ink-bar {
     background-color: inherit !important;
+
   }
 
   .mat-tab-label.mat-tab-ripple {
@@ -134,4 +140,17 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+.hide-it{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .speaker-card-pad{
+    padding-top: 40px;
+  }
+  .bottom-pad{
+    margin-bottom: 65px;
+  }
+
 }

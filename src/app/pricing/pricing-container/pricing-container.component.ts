@@ -9,14 +9,17 @@ export class PricingContainerComponent implements OnInit {
   pricing = [
     {
       btn: 'Buy Now',
+      url: 'http://www.easytickets.pk/momentum',
       name: 'Student Pass',
-      price: '2,000',
+      price: 2000,
       features: ['Access to Conference Area', 'Access to Exhibition Area', 'Access to Final Concert', 'Access to Career Expo', 'Exclusively for Students (Verification powered by Uninama)', '-']
     },
     {
       btn: 'Buy Now',
       name: 'Entrepreneur Pass',
-      price: '5,000',
+      url: 'http://www.easytickets.pk/momentum',
+
+      price: 5000,
       features: [
         'Access to Conference Area',
         'Access to Exhibition Area',
@@ -29,7 +32,8 @@ export class PricingContainerComponent implements OnInit {
     {
       btn: 'Buy Now',
       name: 'Corporate Pass',
-      price: '12,000',
+      url: 'http://www.easytickets.pk/momentum',
+      price: 12000,
       features: [
         'Dedicated Seating at Conference Area',
         'Access to Exhibition Area',
@@ -43,7 +47,8 @@ export class PricingContainerComponent implements OnInit {
     {
       btn: 'Apply Now',
       name: 'Influencer Pass',
-      price: '25,000',
+      url: 'applynow',
+      price: 25000,
       features: [
         'Dedicated Seating at Conference Area',
         'Access to Exhibition Area',
