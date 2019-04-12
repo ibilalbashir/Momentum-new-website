@@ -15,7 +15,7 @@ const AppRoutes: Routes = [
     loadChildren: './profile/profile.module#ProfileModule'
   },
   {
-    path: 'hackathon',
+    path: 'hackathon-52049100',
     loadChildren: './hackathon/hackathon.module#HackathonModule'
   },
   {
