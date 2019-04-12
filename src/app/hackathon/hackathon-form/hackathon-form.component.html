@@ -136,7 +136,8 @@
     </div>
 
     <div class="col-12">
-      <button (click)="formSubmit()" type="button" class="btn btn-outline-dark btn-lg btn-block">Submit</button>
+      <button [mat-dialog-close]="true" [disabled]="!qFormGroup.valid" (click)="formSubmit()" type="button"
+        class="btn btn-outline-dark btn-lg btn-block">Submit</button>
     </div>
 
   </div>

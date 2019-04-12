@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { HackathonService } from 'src/Shared/services/hackathon.services';
 import { MatDialog } from '@angular/material';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-hackathon-form',
@@ -90,6 +91,11 @@ export class HackathonFormComponent implements OnInit {
       console.log(err)
     })
     this.qFormGroup.reset();
+    Swal.fire(
+      'Done!',
+      'Successfully submitted the form',
+      'success'
+    )
 
 
   }
