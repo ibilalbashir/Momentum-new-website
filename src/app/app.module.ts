@@ -18,9 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { UrlNotFoundComponent } from './url-not-found/url-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, StartupDialogComponent],
+  declarations: [AppComponent, StartupDialogComponent, UrlNotFoundComponent],
   imports: [NgxSpinnerModule, MatProgressSpinnerModule, MatProgressBarModule, BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule, MatDialogModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

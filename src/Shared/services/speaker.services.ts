@@ -17,7 +17,9 @@ export class SpeakerServices {
     return this.http.get(`${this.url}/Speakers`)
   }
 
-
+  getSpeakerById(id): Observable<Object> {
+    return this.http.get(`${this.url}/Speakers/${id}`)
+  }
 
 
 

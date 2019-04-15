@@ -22,4 +22,10 @@ export class ServicesContainerComponent implements OnInit {
     this.router.navigate(['/buy-ticket'])
   }
 
+  loadStartup100() {
+    this.router.navigate(['./startup100'])
+  }
+  loadHackathon() {
+    this.router.navigate(['./hackathon'])
+  }
 }

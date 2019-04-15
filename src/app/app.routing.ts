@@ -1,3 +1,4 @@
+import { UrlNotFoundComponent } from './url-not-found/url-not-found.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -14,8 +15,9 @@ const AppRoutes: Routes = [
     path: 'speakers',
     loadChildren: './profile/profile.module#ProfileModule'
   },
+
   {
-    path: 'hackathon-52049100',
+    path: 'hackathon',
     loadChildren: './hackathon/hackathon.module#HackathonModule'
   },
   {
@@ -31,7 +33,10 @@ const AppRoutes: Routes = [
     path: 'conference-details',
     loadChildren:
       './conference-detail/conference-detail.module#ConferenceDetailModule'
-  }
+  }, {
+    path: 'startup100', loadChildren: './startup-100/startup-100.module#Startup100Module'
+  },
+  { path: '**', component: UrlNotFoundComponent }
 ];
 
 @NgModule({

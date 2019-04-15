@@ -1,0 +1,124 @@
+<div class="hero position-relative">
+
+
+
+
+  <div class="container h-100" style="padding-top: 50px; padding-bottom: 40px">
+    <div class="row" style="background: white">
+      <div class="col-12 text-center">
+        <p style="color: black"> <b> Final 100 Startups will be uploaded soon! KEEP REVISITING</b></p>
+      </div>
+    </div>
+    <div class="text-center h-100">
+      <div class="">
+
+        <img class="img-fluid" src="../../../assets/momentum-white-logo.png" alt="">
+        <h1>
+          Momentum & VirtualForce X+ present <br> the Startup100
+        </h1>
+        <p style="    width: 80%;
+                margin: 0 auto;">Momentum & Virtual Force X+ are joining hands to create, Startup 100, a revolutionary
+          platform that provides startup teams the practical knowledge, exposure and networking opportunities they need
+          toenergize their growth in 2019!</p>
+        <!-- <a [routerLink]="['/momentum/companies/create']" routerLinkActive="router-link-active" mat-button class="btn">
+          Apply Now!
+        </a> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vf-info text-center position-relative">
+  <span class="d-none d-sm-block" style="    position: absolute;
+    left: 64px;
+    /* width: 29px; */
+    bottom: -100px;z-index:1;"><img style="margin-top:0;" src="../../../assets/img/elements/12.png" alt=""></span>
+  <div class="container">
+    <img src="../../../assets/vf-logo.jpg" alt="">
+    <!-- <h1>What is Virtual Force?</h1> -->
+    <p style="    width: 80%;
+        margin: 0 auto;">
+      As a home-grown giant with 10 years in the global industry, the Virtual Force X+ program provides a strong and
+      reliable tech backbone to high growth startups around the world. Read more about the Virtual Force X+ program <a
+        style="    color: inherit;
+            text-decoration: underline;" href="https://www.virtualforce.io/vfx/" target="_blank">here</a>.
+    </p>
+  </div>
+</div>
+<div class="perks position-relative">
+  <span style="    position: absolute;
+    right: 51px;
+    top: 420px;"><img style="    width: 50px;" src="../../../assets/img/elements/11.png" alt=""></span>
+  <span style="    position: absolute;
+    top: 777px;
+    left: 60px;"><img style="    width: 50px;" src="../../../assets/img/elements/18.png" alt=""></span>
+  <span style="position: absolute;
+    top: 1394px;
+    right: -60px;"><img style="    width: 88px;" src="../../../assets/img/elements/12.png" alt=""></span>
+  <span style="position: absolute;
+    top: 1374px;
+    left: -60px;"><img style="    width: 88px;" src="../../../assets/img/elements/12.png" alt=""></span>
+  <span style="position: absolute;
+    top: 2285px;
+    right: 420px;"><img style="    width: 55px;" src="../../../assets/img/elements/16.png" alt=""></span>
+  <span style="    position: absolute;
+    bottom: 480px;
+    left: 250px;"><img style="    width: 55px;" src="../../../assets/img/elements/18.png" alt=""></span>
+  <div class="container">
+    <h1><span>What does this partnership mean for you?</span></h1>
+    <div class="row">
+      <div class="col-12 perk-item" *ngFor="let item of data;let odd=odd; let even=even;">
+        <div class="row">
+          <ng-container *ngIf="even; else oddTemp">
+            <div class="col-12 col-sm-5 text-center text-sm-left">
+              <img class="img-fluid" src="{{item?.image}}" alt="">
+            </div>
+            <div class="col-1 d-none d-sm-block"></div>
+            <div
+              class="col-12 col-sm-5 d-flex flex-column justify-content-center order-1 order-sm-0 text-center text-right text-sm-right">
+              <span>{{item.heading}}</span>
+              <p>{{item.description}}</p>
+            </div>
+          </ng-container>
+          <ng-template #oddTemp>
+            <div
+              class="col-12 col-sm-5 d-flex flex-column justify-content-center order-1 order-sm-0 text-center text-left text-sm-left">
+              <span>{{item.heading}}</span>
+              <p>{{item.description}}</p>
+            </div>
+            <div class="col-1 d-none d-sm-block"></div>
+            <div class="col-12 col-sm-5 text-center text-sm-right">
+              <img class="img-fluid" src="{{item?.image}}" alt="">
+            </div>
+          </ng-template>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div class="pre-footer text-center position-relative">
+  <span style="position: absolute;
+    left: -12px;
+    top: 90px;"><img src="../../../assets/img/elements/4.png" alt=""></span>
+  <span class="d-none d-lg-block" style="position: absolute;
+    right: 255px;
+    top: 130px;"><img style="    width: 50px;" src="../../../assets/img/elements/2.png" alt=""></span>
+  <span style="position: absolute;
+    left: 230px;
+    bottom: -20px;
+    z-index: 1;"><img style="    width: 40px;" src="../../../assets/img/elements/9.png" alt=""></span>
+  <div class="container">
+    <h1>And most importantly</h1>
+    <p>Lots of great conversations, experiences and connections to supercharge your growth in 2019! We have limited
+      space in the program so if this sounds like something you’d like to be a part of, to make sure to register your
+      startup as early as possible.
+      All entries will be evaluated by Virtual Force X+. Shortlisted candidates will be reached out to accordingly.
+    </p>
+    <!-- <a [routerLink]="['/momentum/companies/create']" routerLinkActive="router-link-active" mat-button class="btn">
+      Apply Now!
+    </a> -->
+  </div>
+</div>
