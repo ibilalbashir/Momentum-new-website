@@ -14,6 +14,9 @@ const AppRoutes: Routes = [
   {
     path: 'speakers',
     loadChildren: './profile/profile.module#ProfileModule'
+  }, {
+    path: 'partners',
+    loadChildren: './partners/partners.module#PartnersModule'
   },
 
   {

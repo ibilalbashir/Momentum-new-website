@@ -1,12 +1,15 @@
 mat-card {
-  height: 270px;
+
  margin: 15px;
   border-radius: 0 !important;
   font-family: Avenir !important;
   cursor: pointer;
 
-}
 
+}
+.card-height{
+  height: 270px;
+}
 .service-card:hover{
   -webkit-box-shadow: 9px 10px 0px 0px rgba(228,173,39,1) !important;
   -moz-box-shadow: 9px 10px 0px 0px rgba(228,173,39,1) !important;

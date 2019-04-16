@@ -32,20 +32,20 @@ export class HackathonFormComponent implements OnInit {
   qFormGroup;
   constructor(private formBuilder: FormBuilder, private hackathonService: HackathonService, public dialog: MatDialog) {
     this.qFormGroup = formBuilder.group({
-      startupName: ['', [Validators.required]],
-      founderName: ['', [Validators.required]],
+      startupName: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(50)]],
+      founderName: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(50)]],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', [Validators.required]],
       website: ['', [Validators.required]],
-      a1: ['', [Validators.required]],
+      a1: ['', [Validators.required, Validators.minLength(4)]],
       a2: ['', [Validators.required]],
-      a3: ['', [Validators.required]],
+      a3: ['', [Validators.required, Validators.minLength(2)]],
 
-      a4: ['', [Validators.required]],
-      a5: ['', [Validators.required]],
-      a6: ['', [Validators.required]],
+      a4: ['', [Validators.required, Validators.minLength(5)]],
+      a5: ['', [Validators.required, Validators.minLength(2)]],
+      a6: ['', [Validators.required, Validators.minLength(5)]],
 
-      a7: ['', [Validators.required]]
+      a7: ['', [Validators.required, Validators.minLength(5)]]
     })
   }
 
@@ -93,7 +93,7 @@ export class HackathonFormComponent implements OnInit {
     this.qFormGroup.reset();
     Swal.fire(
       'Done!',
-      'Successfully submitted the form',
+      'Form Submitted Successfully, Keep checking your email',
       'success'
     )
 
