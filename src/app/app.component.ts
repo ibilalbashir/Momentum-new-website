@@ -9,7 +9,7 @@ import { RouteConfigLoadStart } from "@angular/router";
 import { isPlatformBrowser } from '@angular/common';
 import { environment } from 'src/environments/environment';
 import { NgxSpinnerService } from 'ngx-spinner';
-
+import { Intercom } from 'ng-intercom';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,7 +18,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class AppComponent {
   title = 'Momentum Tech Conference ';
   public isShowingRouteLoadIndicator: boolean;
-  constructor(public dialog: MatDialog, private router: Router, private spinner: NgxSpinnerService) {
+  constructor(public dialog: MatDialog, private router: Router, private spinner: NgxSpinnerService, public intercom: Intercom) {
     this.isShowingRouteLoadIndicator = false;
 
     // As the router loads modules asynchronously (via loadChildren), we're going to
@@ -89,6 +89,13 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
+    this.intercom.boot({
+      app_id: 'l29aqh38',
+
+      widget: {
+        "activator": "#intercom"
+      }
+    });
 
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
@@ -99,7 +106,9 @@ export class AppComponent {
       this.showSpinner();
     });
 
-    // this.openDialog();
+
+
+
   }
 
   openDialog(): void {
