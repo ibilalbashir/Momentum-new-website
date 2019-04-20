@@ -1,9 +1,20 @@
-<div class="container">
-    <div class="partners">
-        <ul class="text-center">
-            <li *ngFor="let item of partnersArr">
-                <app-partner-list [categoryName]="item.category" [partnersArray]="item.partners"></app-partner-list>
-            </li>
-        </ul>
+<div class="container p-container">
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Our Partners</h1>
     </div>
+
+
+  </div>
+  <div class="row">
+
+    <div class="col-3 partners-col" *ngFor="let item of partnersArr">
+      <mat-card class="partner-card mat-elevation-z0" [style.background]="'url('+ item.image+')'">
+
+      </mat-card>
+      <p class="text-center category"><b>{{item.category}}</b></p>
+    </div>
+  </div>
+
 </div>

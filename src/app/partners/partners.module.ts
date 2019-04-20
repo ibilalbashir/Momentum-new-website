@@ -5,9 +5,10 @@ import { PartnersRoutingModule } from './partners-routing.module';
 import { PartnerContainerComponent } from './partner-container/partner-container.component';
 import { PartnerListComponent } from './partner-container/partner-list/partner-list.component';
 import { PartnerPopupComponent } from './partner-container/partner-popup/partner-popup.component';
-import { MatDialogModule } from '@angular/material';
+import { MatDialogModule, MatCardModule } from '@angular/material';
 @NgModule({
-  imports: [CommonModule, PartnersRoutingModule, MatDialogModule],
+  imports: [CommonModule, PartnersRoutingModule, MatDialogModule,
+    MatCardModule],
   declarations: [
     PartnerContainerComponent,
     PartnerListComponent,
@@ -15,4 +16,4 @@ import { MatDialogModule } from '@angular/material';
   ],
   entryComponents: [PartnerPopupComponent]
 })
-export class PartnersModule {}
+export class PartnersModule { }

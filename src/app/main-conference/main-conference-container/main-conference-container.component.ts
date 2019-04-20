@@ -17,6 +17,8 @@ export class MainConferenceContainerComponent implements OnInit {
   newObj = [];
   index1 = [];
   index2 = [];
+  fields;
+  fields2;
 
   constructor(private conferenceServices: ConferenceServices) { }
 
@@ -56,20 +58,7 @@ export class MainConferenceContainerComponent implements OnInit {
         }
       }
 
-      // this.index1.map(x => {
-      //   var z = new Date(x.from);
-      //   x.from = z.getHours() + ':' + z.getMinutes();
-      //   var y = new Date(x.to);
-      //   x.to = y.getHours() + ':' + y.getMinutes();
 
-      // })
-      // this.index2.map(x => {
-      //   var z = new Date(x.from);
-      //   x.from = z.getHours() + ':' + z.getMinutes();
-      //   var y = new Date(x.to);
-      //   x.to = y.getHours() + ':' + y.getMinutes();
-
-      // })
 
 
 
@@ -78,18 +67,29 @@ export class MainConferenceContainerComponent implements OnInit {
       console.log('index1', this.index1);
       console.log('index2', this.index2);
       const newdate1 = this.date1.replace(new RegExp("/", "g"), '-')
-      console.log('new date', newdate1)
-      const fields = newdate1.split('-');
-      const fields2 = this.date2.split('/');
+      console.log('new date', newdate1);
 
-      const d2 = fields2[2] + '-' + fields2[1] + '-' + fields2[0];
-      const d1 = fields[2] + '-' + fields[1] + '-' + fields[0];
+      try {
+        this.fields = newdate1.split('-');
+      } catch (error) {
+        console.log(error);
+      }
+      try {
+        this.fields2 = this.date2.split('/');
+      } catch (error) {
+        console.log(error);
+      }
+
+
+      const d2 = this.fields2[2] + '-' + this.fields2[1] + '-' + this.fields2[0];
+      const d1 = this.fields[2] + '-' + this.fields[1] + '-' + this.fields[0];
       console.log('d1', d1)
       console.log('d2', d2)
 
       // console.log(moment(newdate1).format("MMM"))
       console.log(moment(new Date(d1)).format('MMMM Do YYYY'));
       this.date1ToShow = moment(new Date(d1)).format('MMMM Do ');
+      console.log('date 1 to show', this.date1ToShow)
       this.date2ToShow = moment(new Date(d2)).format('MMMM Do ');
       console.log(this.date2ToShow)
 

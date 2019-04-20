@@ -20,9 +20,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { UrlNotFoundComponent } from './url-not-found/url-not-found.component';
 import { IntercomModule } from 'ng-intercom';
+import { PrivacyComponent } from './privacy/privacy.component';
+
 
 @NgModule({
-  declarations: [AppComponent, StartupDialogComponent, UrlNotFoundComponent],
+  declarations: [AppComponent, StartupDialogComponent, UrlNotFoundComponent, PrivacyComponent],
   imports: [NgxSpinnerModule, MatProgressSpinnerModule, MatProgressBarModule, BrowserModule, HeaderModule, FooterModule, AppRoutingModule, BrowserAnimationsModule, MatDialogModule, HttpClientModule,
     IntercomModule.forRoot({
       appId: 'l29aqh38',
