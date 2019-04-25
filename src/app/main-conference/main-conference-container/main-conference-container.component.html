@@ -23,7 +23,7 @@
                   <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
                     <div class="col-md-3 col-sm-12 col-xs-12">
                       <div class="clip">
-                        <p class="time-stamp">{{item.from}} - {{item.to}}</p>
+                        <p class="time-stamp">{{item.from |date: 'hh:mm'}} - {{item.to | date:'shortTime'}}</p>
                       </div>
                     </div>
                     <div class="col-md-9 col-sm-12 col-xs-12">
@@ -38,62 +38,24 @@
                         {{item.type}}
                       </p>
 
-                      <!--row 1-->
+
                       <div class="row">
 
-                        <div class="speaker-card col-md-3 col-sm-6 " *ngFor="let i of item.participant"
-                          [ngClass]="{'hide-it':i.type === 'speaker' }">
-                          <div class="row" *ngIf="i.type == 'moderator'">
+
+                        <app-speaker [participants]=item.participant></app-speaker>
 
 
 
-                            <div class="col-3">
 
-                              <img class="speaker-img" src={{i.imgUrl}} alt="">
 
-                            </div>
-                            <div class="col-9">
-                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
-                            </div>
 
-                          </div>
 
-                        </div>
 
                       </div>
 
-                      <!--row 2-->
-                      <div class="row speaker-card-pad">
-
-                        <div class="speaker-card col-3" *ngFor="let i of item.participant"
-                          [ngClass]="{'hide-it':i.type === 'moderator' }">
-                          <div class="row" *ngIf="i.type != 'moderator'">
-                            <div class="col-12"></div>
 
 
-                            <div class="col-3">
 
-                              <img class="speaker-img" src={{i.imgUrl}} alt="">
-
-                            </div>
-                            <div class="col-9">
-                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <!--row 2 ends here-->
-
-
-                      <p class="grey-font" style="padding-top: 40px">
-                        <i class="keynote">
-                          <img src="../../../assets/wordpress.png" alt="" />
-                        </i>
-                        wordpress, event, startup, business
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -104,7 +66,7 @@
                   <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
                     <div class="col-md-3 col-sm-12 col-xs-12">
                       <div class="clip">
-                        <p class="time-stamp">{{item.from}} - {{item.to}}</p>
+                        <p class="time-stamp">{{item.from |date: 'hh:mm'}} - {{item.to | date:'shortTime'}}</p>
                       </div>
                     </div>
                     <div class="col-md-9 col-sm-12 col-xs-12">
@@ -119,61 +81,14 @@
                         {{item.type}}
                       </p>
 
-                      <!--row 1-->
+
+
+
                       <div class="row">
-
-                        <div class="speaker-card col-md-3 col-sm-6 " *ngFor="let i of item.participant"
-                          [ngClass]="{'hide-it':i.type === 'speaker' }">
-                          <div class="row" *ngIf="i.type == 'moderator'">
-
-
-
-                            <div class="col-3">
-
-                              <img class="speaker-img" src={{i.imgUrl}} alt="">
-
-                            </div>
-                            <div class="col-9">
-                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
-                            </div>
-
-                          </div>
-
-                        </div>
-
+                        <app-speaker [participants]=item.participant></app-speaker>
                       </div>
 
-                      <!--row 2-->
-                      <div class="row speaker-card-pad">
 
-                        <div class="speaker-card col-3" *ngFor="let i of item.participant"
-                          [ngClass]="{'hide-it':i.type === 'moderator' }">
-                          <div class="row" *ngIf="i.type != 'moderator'">
-                            <div class="col-12"></div>
-
-
-                            <div class="col-3">
-
-                              <img class="speaker-img" src={{i.imgUrl}} alt="">
-
-                            </div>
-                            <div class="col-9">
-                              <p class="grey-font">{{i.name}}<br>({{i.type}})<br></p>
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <!--row 2 ends here-->
-
-                      <p style="padding-top: 40px;" class="grey-font">
-                        <i class="keynote">
-                          <img src="../../../assets/wordpress.png" alt="" />
-                        </i>
-                        wordpress, event, startup, business
-                      </p>
                     </div>
                   </div>
                 </div>

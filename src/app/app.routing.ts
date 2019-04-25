@@ -28,19 +28,29 @@ const AppRoutes: Routes = [
     path: 'main-conference',
     loadChildren:
       './main-conference/main-conference.module#MainConferenceModule'
+  }, {
+    path: 'startups',
+    loadChildren: './startup-listing/startup-listing.module#StartupListingModule'
   },
   {
-    path: 'fyp-pitching',
+    path: 'workshops',
     loadChildren: './fyp-pitching/fyp-pitching.module#FypPitchingModule'
   },
   {
     path: 'conference-details',
     loadChildren:
       './conference-detail/conference-detail.module#ConferenceDetailModule'
-  }, {
+  },
+  {
     path: 'startup100', loadChildren: './startup-100/startup-100.module#Startup100Module'
   }, {
+    path: 'companies', loadChildren: './company/company.module#CompanyModule'
+  },
+  {
     path: 'privacy', component: PrivacyComponent
+  },
+  {
+    path: 'logistics', loadChildren: './offers/offers.module#OffersModule'
   },
   { path: '**', component: UrlNotFoundComponent }
 ];

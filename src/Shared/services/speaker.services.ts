@@ -14,7 +14,7 @@ export class SpeakerServices {
   constructor(private http: HttpClient) { }
 
   getSpeakers(): Observable<Object> {
-    return this.http.get(`${this.url}/Speakers`)
+    return this.http.get(`${this.url}/Speakers/?filter=%7B%22where%22%3A%7B%22isActive%22%3Atrue%7D%7D&[order]=sortOrder ASC`)
   }
 
   getSpeakerById(id): Observable<Object> {
@@ -25,3 +25,5 @@ export class SpeakerServices {
 
 
 }
+
+

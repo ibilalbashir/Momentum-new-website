@@ -6,9 +6,11 @@ import { MainConferenceContainerComponent } from './main-conference-container/ma
 
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
+import { SpeakerComponent } from './speaker/speaker.component';
+import { SpeakerCardComponent } from './speaker-card/speaker-card.component';
 
 @NgModule({
   imports: [CommonModule, MainConferenceRoutingModule, MatTabsModule, MatCardModule],
-  declarations: [MainConferenceContainerComponent]
+  declarations: [MainConferenceContainerComponent, SpeakerComponent, SpeakerCardComponent]
 })
 export class MainConferenceModule { }

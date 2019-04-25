@@ -8,17 +8,13 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class PartnersServices {
+export class WorkshopsServices {
   url = environment.url;
 
   constructor(private http: HttpClient) { }
 
-  getPartners(): Observable<Object> {
-    return this.http.get(`${this.url}/Partners?filter[order]=sortOrder ASC`)
-  }
-
-  getPartnerById(id): Observable<Object> {
-    return this.http.get(`${this.url}/Partners/${id}`)
+  getWorkshops(): Observable<Object> {
+    return this.http.get(`${this.url}/Workshops`);
   }
 
 

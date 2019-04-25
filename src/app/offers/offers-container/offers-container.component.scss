@@ -1,0 +1,16 @@
+.bg {
+  background: url('../../../assets/event-detail-light.jpg');
+  height: 250px;
+  background-size: cover;
+  #title {
+      padding-top: 70px;
+      h1 {
+          color: white;
+          font-weight: bolder;
+      }
+  }
+}
+
+a{
+  cursor: pointer;
+}

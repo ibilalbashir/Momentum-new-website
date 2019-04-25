@@ -1,0 +1,21 @@
+<div class="container content">
+  <div class="row">
+    <div class="col-4 text-center">
+      <img class="logo img-fluid" [src]="obj['image']" alt="">
+    </div>
+    <div class="col-8">
+      <h3>{{obj['name']}}</h3>
+      {{obj['description']}}
+    </div>
+  </div>
+
+
+  <div class="row services">
+    <div class="col-3 text-center" *ngFor="let item of comapanyServices">
+      <img class="service-logo img-fluid" [src]=item.image alt="">
+      <p><b>{{item.name}}</b></p>
+      <p style="font-size: 12px;">{{item.description}}</p>
+      <a [href]="i" *ngFor="let i of item.urls" target="_blank">{{i}}</a>
+    </div>
+  </div>
+</div>
