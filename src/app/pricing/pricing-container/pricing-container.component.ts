@@ -45,8 +45,8 @@ export class PricingContainerComponent implements OnInit {
       ]
     },
     {
-      btn: 'Apply Now',
-      name: 'Influencer Pass',
+      btn: 'Sold-Out',
+      name: 'Influencer Pass (Sold-Out)',
       url: 'applynow',
       price: 25000,
       features: [

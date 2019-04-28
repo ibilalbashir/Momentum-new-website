@@ -150,6 +150,11 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  .speakerdesignation-col-1{
+    right: 10%;
+    position: absolute;
+    top: 56%;
+  }
   img {
     margin: 0 !important;
     height: 200px !important;

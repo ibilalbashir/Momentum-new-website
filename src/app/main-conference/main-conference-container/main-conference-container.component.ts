@@ -126,11 +126,10 @@ export class MainConferenceContainerComponent implements OnInit {
 
 
 
-      const newdate1 = this.date1.replace(new RegExp("/", "g"), '-')
-      console.log('new date', newdate1);
+
 
       try {
-        this.fields = newdate1.split('-');
+        this.fields = this.date1.split('/');
       } catch (error) {
         console.log(error);
       }

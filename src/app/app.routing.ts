@@ -42,17 +42,24 @@ const AppRoutes: Routes = [
       './conference-detail/conference-detail.module#ConferenceDetailModule'
   },
   {
+    path: 'speakers19', loadChildren: './speakers-listing/speakers-listing.module#SpeakersListingModule'
+  },
+  {
     path: 'startup100', loadChildren: './startup-100/startup-100.module#Startup100Module'
-  }, {
-    path: 'companies', loadChildren: './company/company.module#CompanyModule'
+  },
+  {
+    path: 'company', loadChildren: './company/company.module#CompanyModule'
   },
   {
     path: 'privacy', component: PrivacyComponent
   },
   {
     path: 'logistics', loadChildren: './offers/offers.module#OffersModule'
+  }, {
+    path: 'investors', loadChildren: './investors/investors.module#InvestorsModule'
   },
   { path: '**', component: UrlNotFoundComponent }
+
 ];
 
 @NgModule({

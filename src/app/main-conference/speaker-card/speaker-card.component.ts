@@ -15,6 +15,7 @@ export class SpeakerCardComponent implements OnInit {
   ngOnInit() {
 
     this.speakerService.getSpeakerById(this.id).subscribe(res => {
+
       this.obj = res;
 
     }, err => {

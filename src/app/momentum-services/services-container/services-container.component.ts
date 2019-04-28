@@ -28,4 +28,7 @@ export class ServicesContainerComponent implements OnInit {
   loadHackathon() {
     this.router.navigate(['./hackathon'])
   }
+  loadMainConference() {
+    this.router.navigate(['/main-conference'])
+  }
 }

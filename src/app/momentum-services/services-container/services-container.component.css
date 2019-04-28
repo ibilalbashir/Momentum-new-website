@@ -37,7 +37,7 @@ mat-card {
   padding-bottom: 30px;
 }
 
-img {
+.service-logo {
   height: 50px;
   margin: 15px;
 }
@@ -77,7 +77,7 @@ img {
     font-size: 11px !important;
   }
 
-  img {
+  .service-logo {
     height: 50px !important;
   }
 }

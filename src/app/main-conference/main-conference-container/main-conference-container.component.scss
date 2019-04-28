@@ -2,7 +2,8 @@
   .sub-header {
     background: url('./../../../assets/agenda-header.png');
 
-    width: -webkit-fill-available;
+    width: 100%;
+    background-size: cover;
 
     background-repeat: no-repeat;
   }

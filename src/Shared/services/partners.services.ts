@@ -14,6 +14,7 @@ export class PartnersServices {
   constructor(private http: HttpClient) { }
 
   getPartners(): Observable<Object> {
+    // return this.http.get(`${this.url}/Partners?filter[order]=sortOrder ASC`)
     return this.http.get(`${this.url}/Partners?filter[order]=sortOrder ASC`)
   }
 

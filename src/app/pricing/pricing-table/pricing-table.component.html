@@ -12,7 +12,7 @@
 
   </div>
   <div class="buy-button position-absolute">
-    <button class="btn" style="z-index: 2" (click)="openDialog(url)">{{btn}}</button>
+    <button class="btn" style="z-index: 2" (click)="openDialog(url)" *ngIf="url!=='applynow'">{{btn}}</button>
 
   </div>
 </div>

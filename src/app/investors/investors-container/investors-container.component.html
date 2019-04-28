@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <br>
+      <h1>Our Investors</h1>
+      <br>
+    </div>
+  </div>
+  <div class="row">
+
+    <div [ngClass]="{'d-none': item.category!=='Investor'}" class="col-2 partners-col" *ngFor="let item of partnersArr">
+      <mat-card class="partner-card mat-elevation-z0" [style.background]="'url('+ item.image+')'">
+
+      </mat-card>
+      <p class="text-center">{{item.category}}</p>
+      <br><br>
+    </div>
+  </div>
+</div>
