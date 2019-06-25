@@ -1,0 +1,49 @@
+.sprite {
+  background: url('../.../../../../assets/sprite.png') no-repeat top left;
+  height: 12px;
+}
+
+.sprite.shape2 {
+  background-position: 0 -116px;
+  width: 49px;
+  height: 51px;
+  position: absolute;
+  right: 10%;
+  margin-top: 25px;
+}
+
+.sprite.shape3 {
+  background-position: 0 -177px;
+  width: 84px;
+  height: 86px;
+  position: absolute;
+  top: 156%;
+}
+
+
+.sprite.shape11 {
+  background-position: 0 -925px;
+  width: 81px;
+  height: 83px;
+  top: 41%;
+    left: 24px;
+
+  position: absolute;
+}
+
+
+.submit-btn{
+  background: #E4AD27;
+  color: white;
+
+}
+
+
+.main-container{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.best-field{
+border-color: black;
+}

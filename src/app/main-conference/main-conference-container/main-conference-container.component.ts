@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ConferenceServices } from './../../../Shared/services/conference.services';
 import { Component, OnInit, ɵConsole } from '@angular/core';
 import * as moment from 'moment';
@@ -23,7 +24,7 @@ export class MainConferenceContainerComponent implements OnInit {
 
 
 
-  constructor(private conferenceServices: ConferenceServices) { }
+  constructor(private conferenceServices: ConferenceServices, private _router: Router) { }
 
 
   ngOnInit() {
@@ -155,5 +156,7 @@ export class MainConferenceContainerComponent implements OnInit {
 
 
   }
+
+
 
 }

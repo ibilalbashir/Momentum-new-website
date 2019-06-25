@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: ':id',
+    path: '',
     component: ConferenceDetailsContainerComponent
   }
 ];
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ConferenceDetailRoutingModule {}
+export class ConferenceDetailRoutingModule { }

@@ -14,8 +14,8 @@ export class StartupServices {
   constructor(private http: HttpClient) { }
 
   getAllStartups(): Observable<Object> {
-    // return this.http.get(`${this.url}/Companies?filter=%7B%22where%22%20%3A%20%7B%22startup100%22%20%3A%20true%7D%7D`);
-    return this.http.get(`${this.url}/Companies`)
+    return this.http.get(`${this.url}/Companies?filter=%7B%22where%22%20%3A%20%7B%22startup100%22%20%3A%20true%7D%7D`);
+    // return this.http.get(`${this.url}/Companies`)
   }
 
   getStartupById(id): Observable<Object> {
@@ -24,5 +24,10 @@ export class StartupServices {
   getStartupServices(id): Observable<Object> {
     return this.http.get(`${this.url}/Companies/${id}/companyServices`)
   }
+  getfeaturedStartups(): Observable<Object> {
+    return this.http.get(`${this.url}/Companies?filter=%7B%22where%22%3A%7B%22isFeatured%22%3Atrue%2C%20%22isFeatured%22%3A%22True%22%7D%7D`)
+  }
+
+
 
 }

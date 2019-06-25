@@ -5,12 +5,40 @@
     <div class="row">
       <div class="sub-header">
         <div class="container content">
-          <h3 class="main-heading">Conference Agenda</h3>
+          <h3 class="main-heading text-center">Conference Agenda</h3>
           <br />
-          <p class="location">Marque, PC Karachi</p>
+          <p class="location text-center">Marquee, PC Karachi</p>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div style="margin-top: 20px;" class="col-12 text-center">
+        <p><b>Sponsored By:</b></p>
+      </div>
+
+      <div class="offset-md-4 col-md-2 col-6">
+        <mat-card class="sponsor-card-1 mat-elevation-z0">
+
+        </mat-card>
+
+
+
+
+      </div>
+      <div class="col-md-2 col-6">
+        <mat-card class="sponsor-card-2 mat-elevation-z0">
+
+        </mat-card>
+
+
+
+
+      </div>
+
+
+    </div>
+
+
     <br />
     <br />
     <div class="row">
@@ -19,7 +47,8 @@
           <div class="col-12">
             <mat-tab-group mat-stretch-tabs class="bottom-pad">
               <mat-tab label='30th April'>
-                <div class="border" *ngFor="let item of index1">
+                <div class="border" *ngFor="let item of index1" style="cursor: pointer"
+                  [routerLink]="['../conference-details']" [queryParams]="{ 'id': item.id}">
                   <div class="row" style="margin-right: 0px !important; margin-left: 0px !important">
                     <div class="col-md-3 col-sm-12 col-xs-12">
                       <div class="clip">
@@ -33,29 +62,17 @@
 
                       <p>{{item.description}}</p>
 
-                      <p class="grey-font">
+                      <!-- <p class="grey-font">
                         <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
                         {{item.type}}
-                      </p>
+                      </p> -->
 
 
                       <div class="row">
 
 
                         <app-speaker [participants]=item.participant></app-speaker>
-
-
-
-
-
-
-
-
                       </div>
-
-
-
-
                     </div>
                   </div>
                 </div>
@@ -76,10 +93,10 @@
 
                       <p>{{item.description}}</p>
 
-                      <p class="grey-font">
+                      <!-- <p class="grey-font">
                         <i class="keynote"><img src="../../../assets/keynote-speaker.png" alt="" /></i>
                         {{item.type}}
-                      </p>
+                      </p> -->
 
 
 

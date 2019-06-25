@@ -27,12 +27,11 @@
   </div>
   <div class="row">
 
-    <div [ngClass]="{'d-none': item.category==='Sponsor'}" class="col-2 partners-col" *ngFor="let item of partnersArr">
-      <mat-card *ngIf="item.category !== 'Sponsor'" class="partner-card mat-elevation-z0"
-        [style.background]="'url('+ item.image+')'">
+    <div class="col-2 partners-col" *ngFor="let item of finalArray">
+      <mat-card class="partner-card mat-elevation-z0" [style.background]="'url('+ item.image+')'">
 
       </mat-card>
-      <p class="text-center">{{item.category}}</p>
+      <p class=" text-center">{{item.category}}</p>
 
     </div>
   </div>

@@ -1,3 +1,5 @@
+import { WinnersModule } from './../winners/winners.module';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,6 +9,8 @@ import { VideoBannerModule } from '../video-banner/video-banner.module';
 import { MomentumServicesModule } from '../momentum-services/momentum-services.module';
 import { MomentumPartnersModule } from '../momentum-partners/momentum-partners.module';
 import { SpeakersModule } from '../speakers/speakers.module';
+import { ImgSliderModule } from '../img-slider/img-slider.module';
+
 
 @NgModule({
   imports: [
@@ -15,8 +19,10 @@ import { SpeakersModule } from '../speakers/speakers.module';
     VideoBannerModule,
     MomentumServicesModule,
     MomentumPartnersModule,
-    SpeakersModule
+    SpeakersModule,
+    ImgSliderModule,
+    WinnersModule
   ],
   declarations: [HomeContainerComponent]
 })
-export class HomeModule {}
+export class HomeModule { }

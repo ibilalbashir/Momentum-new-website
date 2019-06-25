@@ -1,7 +1,8 @@
-<li class="speaker-card">
+<li [ngClass]="{'d-none': obj['name']==='Momentum Team'}" class="speaker-card">
   <img class="speaker-img" [src]="obj['image']" alt="">
 
   <br>
-  <p class="grey-font">{{obj['name']}}<br><span style="color: grey"> ({{obj['company']}})</span><br></p>
+  <p class="grey-font">{{obj['name']}}<br><span style="color: grey">
+      ({{obj['company']}})</span><br></p>
 
 </li>

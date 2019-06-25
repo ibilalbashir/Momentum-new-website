@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-12 text-center">
+      <h1>Influencers</h1>
+    </div>
+  </div>
+</div>
+<div class="container" style="margin-top: 60px; margin-bottom: 60px;">
+
+  <div class="row" style="margin-top: 30px;">
+
+    <div class="col-6 col-sm-6 col-md-3 border-bottom" *ngFor="let item of obj">
+
+
+      <div class="influencer-div  text-center ">
+        <mat-card class="influencer-card mat-elevation-z0" [style.background]="'url('+ item.image+')'">
+
+        </mat-card>
+        <p style="font-size: 19px; margin-bottom: unset;"><b>{{item.name}}</b></p>
+        <p style="margin: unset"><b>{{item.company}}</b> </p>
+        <p style="font-size: 13px !important; color: grey; margin: 5px;"> {{item.designation}}</p>
+        <a [href]="item.socialLinks[2].link" target="_blank">LinkedIn</a>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container-fluid">
+  <!-- <div class="row">
+    <div class="offset-10 col-2 text-center">
+      <p><b>Curated By: </b></p>
+      <img style="margin-bottom: 60px; height: 36px;" src="../../../assets/virtual-f.png" alt="">
+    </div>
+  </div> -->
+</div>

@@ -23,7 +23,7 @@ export class ServicesContainerComponent implements OnInit {
   }
 
   loadStartup100() {
-    this.router.navigate(['./startup100'])
+    this.router.navigate(['./startups'])
   }
   loadHackathon() {
     this.router.navigate(['./hackathon'])

@@ -10,7 +10,7 @@ const AppRoutes: Routes = [
   },
   {
     path: 'buy-ticket',
-    loadChildren: './pricing/pricing.module#PricingModule'
+    loadChildren: './user-subscription/user-subscription.module#UserSubscriptionModule'
   },
   {
     path: 'speakers',
@@ -57,6 +57,13 @@ const AppRoutes: Routes = [
     path: 'logistics', loadChildren: './offers/offers.module#OffersModule'
   }, {
     path: 'investors', loadChildren: './investors/investors.module#InvestorsModule'
+  }, {
+    path: 'influencers', loadChildren: './influencers/influencers.module#InfluencersModule'
+  }, {
+    path: 'm18', loadChildren: './gallery/gallery.module#GalleryModule'
+  },
+  {
+    path: 'm17', loadChildren: './momentum17/momentum17.module#Momentum17Module'
   },
   { path: '**', component: UrlNotFoundComponent }
 

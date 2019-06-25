@@ -17,6 +17,10 @@ export class ConferenceServices {
     return this.http.get(`${this.url}/Conferences`)
   }
 
+  getConferenceById(id): Observable<Object> {
+    return this.http.get(`${this.url}/Conferences/${id}`)
+  }
+
 
 
 }

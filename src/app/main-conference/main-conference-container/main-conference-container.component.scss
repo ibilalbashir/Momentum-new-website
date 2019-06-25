@@ -10,7 +10,7 @@
 
   .main-heading {
     color: white;
-    padding-top: 100px;
+    padding-top: 30px;
     font-weight: 600;
   }
 
@@ -18,9 +18,26 @@
     color: white;
     margin-top: -26px;
   }
+  .sponsor-card-1{
+background: url('../../../assets/EngroLogo.png');
+background-repeat: no-repeat !important;
+  background-size: contain !important;
+
+  background-position: center !important;
+  height: 90px;
+  }
+  .sponsor-card-2{
+    background: url('../../../assets/unnamed.png');
+    background-repeat: no-repeat !important;
+  background-size: contain !important;
+
+  background-position: center !important;
+  height: 50px;
+  margin-top: 25px;
+  }
 
   .content {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   .mat-tab-label {

@@ -8,16 +8,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartupContainerComponent implements OnInit {
   obj: any = [];
+  featuredObj: any = [];
+  nonFeatured: any = [];
   constructor(private startupServices: StartupServices) { }
 
   ngOnInit() {
 
     this.startupServices.getAllStartups().subscribe(res => {
       this.obj = res;
-      console.log('startups are', res)
+
+      this.obj.forEach(element => {
+        if (element.isFeatured !== "true" || element.isFeatured !== "True") {
+          this.nonFeatured.push(element)
+        }
+      });
+
+      console.log('non featured are', this.nonFeatured);
+
     }, err => {
       console.log(err)
     })
+
+    this.startupServices.getfeaturedStartups().subscribe(res => {
+      this.featuredObj = res;
+      console.log(res)
+    }, err => {
+      console.log(err)
+    })
+
+
   }
 
 }

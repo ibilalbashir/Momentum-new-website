@@ -18,6 +18,7 @@ export class SpeakerCardComponent implements OnInit {
 
       this.obj = res;
 
+
     }, err => {
       console.log(err)
     })
