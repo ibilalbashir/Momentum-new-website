@@ -1,0 +1,14 @@
+#helpBtn {
+    position: fixed;
+    bottom: 13px;
+    right: 18px;
+    z-index: 1;
+    /deep/ .mat-icon {
+        height: 30px;
+        width: 30px;
+    }
+    /deep/ .material-icons {
+        font-size: 30px;
+        line-height: unset;
+    }
+}
